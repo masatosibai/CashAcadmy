@@ -1,0 +1,1850 @@
+@charset "UTF-8";
+
+/*
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com
+Twitter: @rich_clark
+*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+/* change colours to suit your needs */
+ins {
+    background-color: #ff9;
+    color: #000;
+    text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+    background-color: #ff9;
+    color: #000;
+    font-style: italic;
+    font-weight: bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+input,
+select {
+    vertical-align: middle;
+}
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+}
+
+/* ここからスタイル */
+
+/* header */
+.header {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #0e517229;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+}
+
+.header-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+}
+
+.header-logo {
+    text-align: left;
+    font: normal normal bold 35px/51px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+}
+/* admin-contacts-header admin-users-header　共通 */
+.users-title {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+}
+.change-logout-field {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.logout button {
+    text-align: center;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    background: #ef2843 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    padding: 5px 50px;
+    cursor: pointer;
+}
+.users-contacts-change {
+    margin-right: 10px;
+}
+.users-contacts-change button {
+    text-align: center;
+    text-decoration: underline;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #075c86;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 5px 50px;
+    cursor: pointer;
+}
+/* homeheader */
+.home-header {
+    background-color: #ffffff;
+    width: 100%;
+    height: 106px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.home-header-wrap {
+    position: fixed;
+    z-index: 100;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 106px;
+}
+
+.home-header-logo {
+    font: normal normal bold 30px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+.home-header-nav {
+    display: block;
+    width: 100%;
+}
+.home-header-nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.home-header-nav li {
+    font: normal normal normal 15px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    margin: 0 2%;
+}
+
+.home-header-nav a {
+    color: #000000;
+    text-decoration: none;
+}
+.free-counsel-button-field {
+    background: #ef2843 0% 0% no-repeat padding-box;
+    border-radius: 59px;
+    text-align: center;
+    padding: 10px 25px;
+    margin-right: 1%;
+    margin-left: 1%;
+}
+.free-counsel-button-field a {
+    font: normal normal bold 15px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-decoration: none;
+}
+/*hambergermenu*/
+#HambergerMune {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    padding: 1%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    overflow: auto;
+}
+#delete-hambergerMune {
+    text-align: right;
+    width: 100%;
+}
+#delete-hambergerMune-icon {
+    font: normal normal bold 20px/29px Noto Sans CJK JP;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.HambergerMune-nav {
+    width: 90%;
+    height: 80%;
+    margin: 0 auto;
+}
+.HambergerMune-nav ul {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    height: 100%;
+    padding: 5% 0;
+    margin-bottom: 5%;
+}
+.HambergerMune-nav li {
+    text-align: center;
+    font: normal normal bold 20px/29px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    margin-bottom: 5%;
+}
+.HambergerMune-nav li a {
+    color: #000000;
+    text-decoration: none;
+}
+#HambergerMune-button-field {
+    background: #ef2843 0% 0% no-repeat padding-box;
+    border-radius: 59px;
+    text-align: center;
+    padding: 5px 5px;
+    width: 80%;
+    margin: 0 auto;
+    bottom: 0;
+}
+#HambergerMune-button-field a {
+    font: normal normal bold 24px/35px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-decoration: none;
+}
+/* footer */
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: #e4e4e4 0% 0% no-repeat padding-box;
+    height: 20%;
+}
+#footer p {
+    text-align: center;
+    font: normal normal bold 33px/48px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #707070;
+}
+/*共通*/
+.title-font {
+    font: normal normal bold 35px Noto Sans CJK JP;
+}
+.padding-center {
+    padding: 0 3%;
+}
+.padding-r {
+    padding-right: 3%;
+}
+.padding-l {
+    padding-left: 3%;
+}
+
+/* 予約情報選択画面*/
+#home-header-img {
+    position: relative;
+    background-image: url(../img/tophome.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; /* 画像のサイズを指定    */
+    width: 100%; /* 横幅のサイズを指定    */
+    height: 0;
+    padding-top: 49.6%;
+    margin-bottom: 5%;
+}
+#home-header-img .home-header-coments {
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    width: 50%;
+}
+#home-header-img .home-header-title {
+    text-align: left;
+    font: normal normal bold 45px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 13px #0e5172;
+    margin-bottom: 5%;
+}
+#home-header-img .home-header-coments .comment {
+    text-align: center;
+    font: normal normal bold 17px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #075c86;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    margin-bottom: 2%;
+    padding: 2px 10px;
+    display: table;
+}
+#home-header-img .home-header-performance {
+    width: 85%;
+    margin-top: 5%;
+}
+#home-header-img .home-header-performance-wrap {
+    display: flex;
+    justify-content: left;
+}
+#home-header-img .boder-r {
+    border-right: 2px solid #ffffff;
+}
+#home-header-img .home-header-performance-card {
+    margin-bottom: 5%;
+}
+#home-header-img .home-header-performance-card-title {
+    text-align: center;
+    font: normal normal bold 16px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    height: 50%;
+}
+#home-header-img .number {
+    text-align: center;
+}
+#home-header-img .number .big {
+    text-align: center;
+    font: normal normal bold 36px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 13px #0e5172;
+}
+#home-header-img .number .small {
+    text-align: center;
+    font: normal normal bold 18px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-shadow: 0px 3px 13px #0e5172;
+}
+#home-header-img .research-day {
+    text-align: left;
+    font: normal normal 100 15px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    opacity: 0.55;
+}
+#recommend-threemerit-field {
+    display: flex;
+    justify-content: space-between;
+    width: 73.75%;
+    margin: 0 auto 5%;
+}
+#recommend-threemerit-field .card {
+    width: 46.17%;
+}
+#recommend-threemerit-field .number {
+    text-align: left;
+    font: normal normal bold 30px Meiryo;
+    letter-spacing: 0px;
+    color: #075c86;
+}
+#recommend-threemerit-field .title {
+    text-align: left;
+    font: normal normal bold 25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+}
+#recommend-threemerit-field .card-img {
+    width: 100%;
+    margin-bottom: 38px;
+}
+#recommend-threemerit-field .card-img img {
+    width: 100%;
+}
+#recommend-threemerit-field .card-comment {
+    overflow-wrap: break-word;
+}
+#recommend-threemerit-field .card-comment p {
+    text-align: left;
+    font: normal normal normal 18px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #707070;
+}
+#four-features-field {
+    width: 84.27%;
+    margin: 0 auto 5%;
+    position: relative;
+}
+#four-features-field .card-wrap {
+    display: flex;
+    justify-content: center;
+}
+#four-features-field .title {
+    background: #075c86 0% 0% no-repeat padding-box;
+    width: 40.41%;
+    margin: 0 auto 10%;
+    padding: 10px 0;
+}
+#four-features-field .title p {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+#four-features-field .card {
+    width: 24%;
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    margin-right: 1%;
+    padding: 2% 1%;
+}
+#four-features-field .number {
+    background: #075c86 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    position: absolute;
+    left: 8%;
+    top: -5%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    position: relative;
+}
+#four-features-field .number p {
+    position: absolute;
+    font: normal normal bold 27px/37px Meiryo;
+    letter-spacing: 0px;
+    color: #ffffff;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+#four-features-field .card-title {
+    text-align: center;
+    font: normal normal bold 18px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    width: 100%;
+    margin-bottom: 5%;
+}
+#four-features-field .card-img {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 12px;
+    text-align: center;
+    margin: 0 auto 5%;
+    width: 95%;
+    padding: 10% 0;
+}
+#four-features-field .card-img img {
+    width: 70%;
+}
+#four-features-field .comment {
+    text-align: left;
+    font: normal normal normal 14px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #707070;
+    width: 90%;
+    margin: 0 auto;
+}
+#learning-curriculum-example-field {
+    background-image: url(../img/learning_example.png);
+    margin-bottom: 5%;
+}
+.learning-curriculum-example {
+    text-align: center;
+    width: 93.54%;
+    margin: 0 auto;
+    padding-bottom: 5%;
+}
+.learning-curriculum-example .title {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 2%;
+}
+.learning-curriculum-example .short-under-line {
+    border-bottom: 3px solid #ffffff;
+    width: 3%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+}
+.learning-curriculum-example-wrap {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 6px;
+}
+.learning-curriculum-example-wrap .card-field {
+    display: flex;
+    padding: 4% 5%;
+}
+.learning-curriculum-example-wrap .card-field .card {
+    width: 45%;
+    margin: 0 auto;
+}
+.learning-curriculum-example-wrap .card-field .bottom-border {
+    padding-bottom: 5%;
+}
+.learning-curriculum-example-wrap .content-wrap {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 10%;
+}
+.content-wrap .number {
+    text-align: center;
+    font: normal normal bold 35px Meiryo;
+    letter-spacing: 0px;
+    color: #075c86;
+    margin-right: 5%;
+}
+.content-wrap .content-title {
+    text-align: left;
+    font: normal normal bold 25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    padding-top: 2%;
+}
+.learning-curriculum-example-wrap .card-field .content p {
+    text-align: left;
+    font: normal normal normal 25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #707070;
+}
+#free-counsel-steps {
+    width: 100%;
+    margin-bottom: 5%;
+}
+.free-counsel-steps-wrap {
+    width: 86.71%;
+    margin: 0 auto;
+}
+#free-counsel-steps .title p {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #075c86;
+    margin-bottom: 1%;
+}
+#free-counsel-steps .short-under-line {
+    width: 3%;
+    margin: 0 auto 5%;
+    border-bottom: 3px solid #075c86;
+}
+#free-counsel-steps .step {
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 6px;
+    padding: 5% 5%;
+    margin-bottom: 5%;
+    width: 86.17%;
+}
+#free-counsel-steps .step-title {
+    text-align: left;
+    font: normal normal bold 25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    padding-bottom: 3%;
+    margin-bottom: 5%;
+    width: 95%;
+}
+#free-counsel-steps .comment {
+    text-align: left;
+    font: normal normal normal 25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #707070;
+}
+#free-counsel-steps .points {
+    width: 59.87%;
+    margin: 0 auto;
+    padding: 5% 5%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    text-align: center;
+    margin-top: 5%;
+}
+#free-counsel-steps .points ul {
+    text-align: left;
+    font: normal normal normal 25px noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #707070;
+    list-style-position: inside;
+}
+#free-counsel-process {
+    /* background-image: url(../img/freecounselprocess.png); */
+    padding: 5% 5%;
+    margin-bottom: 5%;
+}
+#free-counsel-process .title p {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-bottom: 2%;
+}
+#free-counsel-process .short-under-line {
+    width: 3%;
+    margin: 0 auto;
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: 5%;
+}
+#free-counsel-process .comment {
+    font: normal normal normal 18px Noto Sans CJK JP;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 6px;
+    width: 81.5%;
+    margin: 0 auto;
+    padding: 5% 5%;
+}
+#mainTable {
+    border: 4px solid #075c86;
+    width: 82.81%;
+    margin: 0 auto 5%;
+}
+#mainTable table {
+    width: 100%;
+    height: 50%;
+    table-layout: fixed;
+}
+#mainTable table,
+#mainTable td,
+#mainTable th {
+    border: 1px solid #707070;
+    text-align: center;
+    vertical-align: middle;
+}
+.select_day_hour_button {
+    border: none; /* 枠線を消す */
+    outline: none; /* クリックしたときに表示される枠線を消す */
+    background: transparent;
+}
+.select_day_hour_button:hover {
+    cursor: pointer;
+}
+#changeWeek {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    margin: 0 auto;
+    width: 80%;
+}
+#changeWeek .changeWeeek-button-field {
+    width: 20%;
+}
+#changeWeek button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #333333;
+    text-align: left;
+    font: normal normal bold 31px/47px Meiryo;
+    letter-spacing: 0px;
+    color: #333333;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+}
+#changeWeek .today {
+    text-align: center;
+    font: normal normal bold 31px/47px Meiryo;
+    letter-spacing: 0px;
+    color: #333333;
+}
+#review-field {
+    width: 81.85%;
+    margin: 0 auto 5%;
+}
+#review-field .top-title p {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #075c86;
+    margin-bottom: 1%;
+}
+#review-field .short-under-line {
+    width: 3%;
+    margin: 0 auto 3%;
+    border-bottom: 3px solid #075c86;
+}
+#review-field .review-field-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+#review-field .review {
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    width: 30%;
+    padding: 5% 1%;
+}
+#review-field .title {
+    text-align: center;
+    font: normal normal bold 25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    margin: 0 auto;
+    padding-bottom: 5%;
+    width: 62.87%;
+}
+#review-field .img {
+    width: 62.87%;
+    margin: 0 auto 5%;
+}
+#review-field .img img {
+    width: 100%;
+}
+#review-field .comment {
+    width: 62.87%;
+    margin: 0 auto;
+}
+#review-field .name,
+#review-field .before-after {
+    text-align: left;
+    font: normal normal bold 25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+}
+#review-field .age-profession {
+    text-align: left;
+    font: normal normal bold 25px/36px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+}
+#review-field .message {
+    text-align: left;
+    font: normal normal normal 18px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+}
+#questionnaire-field {
+    background-image: url(../img/questionnaire.png);
+    margin: 0 auto;
+    padding: 3% 2%;
+}
+#questionnaire-field .title {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 1%;
+}
+#questionnaire-field .title p {
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+#questionnaire-field .short-under-line {
+    width: 3%;
+    margin: 0 auto;
+    border-bottom: 3px solid #ffffff;
+    margin-bottom: 5%;
+}
+#questionnaire-field .questionnaire-field-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 80.52%;
+}
+#questionnaire-field .questionnaire-card {
+    width: 30%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    padding: 5% 1%;
+}
+#questionnaire-field .questionnaire-card-title p {
+    text-align: center;
+    font: normal normal bold 25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-bottom: 5%;
+}
+#questionnaire-field .number {
+    text-align: center;
+}
+#questionnaire-field .number .big {
+    text-align: center;
+    font: normal normal bold 90px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #f3c40a;
+}
+#questionnaire-field .number .small {
+    text-align: center;
+    font: normal normal bold 39px/56px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #f3c40a;
+}
+#questionnaire-field .comment p {
+    text-align: left;
+    font: normal normal normal 18px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #707070;
+    width: 80%;
+    margin: 0 auto;
+}
+#questionnaire-field .research-day p {
+    text-align: left;
+    font: normal normal bold 14px/20px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #707070;
+    width: 80%;
+    margin: 0 auto;
+}
+#question-field {
+    background: #f5f5f5 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    width: 80%;
+    padding: 5% 0;
+    margin: 5% auto 5%;
+}
+#question-field .title {
+    margin: 0 auto;
+    margin-bottom: 1%;
+}
+#question-field .title p {
+    text-align: center;
+    letter-spacing: 0px;
+    color: #075c86;
+}
+#question-field .short-under-line {
+    width: 3%;
+    margin: 0 auto;
+    border-bottom: 3px solid #075c86;
+    margin-bottom: 5%;
+}
+#question-field .question-answer {
+    width: 85%;
+    margin: 0 auto 3%;
+    text-align: left;
+}
+#question-field .question-answer .question-mark {
+    text-align: center;
+    font: normal normal bold 40px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #075c86;
+    margin-right: 3%;
+}
+#question-field .question-answer .question {
+    text-align: left;
+    font: normal normal bold 25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+}
+#question-field .question-answer .answer {
+    text-align: left;
+    font: normal normal normal 20px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #707070;
+    margin-top: 1%;
+}
+
+/* 予約情報入力確認画面 */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    height: 100vh;
+}
+.contactwrap {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+    height: 95vh;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+}
+.contactwrap .error-message {
+    text-align: left;
+    font: normal normal bold 16px/18px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: red;
+}
+
+#researvationDay {
+    display: flex;
+    justify-content: center;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #3faf46;
+    border-radius: 3px;
+}
+#researvationDay h1 {
+    text-align: center;
+    font: normal normal bold 27px/39px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #3faf46;
+}
+
+.form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#contact label {
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 3%;
+    margin-top: 6%;
+}
+
+#nameBox-input input {
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 30%;
+    height: 40px;
+}
+.email-input-field input,
+.telnumber-input-field input {
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 65%;
+    height: 40px;
+}
+.name-input {
+    margin-right: 4%;
+    width: 30%;
+}
+.nameExample {
+    display: flex;
+    justify-content: flex-end;
+    align-content: center;
+    align-items: center;
+    margin-right: 4%;
+}
+.firstName,
+.secondName {
+    width: 30%;
+    text-align: left;
+    font: normal normal bold 17px/25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #949494;
+}
+.firstName {
+    margin-right: 8%;
+}
+.email-Example {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.email-Example p {
+    font: normal normal bold 17px/25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #949494;
+    margin-left: 1%;
+}
+.telnumber-Example {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+.telnumber-Example p {
+    font: normal normal bold 17px/25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #949494;
+    margin-left: 7%;
+}
+.privacy-policy {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    margin-bottom: 3%;
+    margin-top: 6%;
+}
+.privacy-policy p {
+    text-align: left;
+    font: normal normal normal 17px/25px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #414141;
+}
+
+.comfirm-button {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2%;
+}
+.comfirm-button button {
+    background: #3faf46 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.comfirm-button button p {
+    text-align: left;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+.back-home {
+    text-align: center;
+}
+
+/* 予約情報確認画面*/
+#confirm {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    height: 100vh;
+}
+.confirmwrap {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 70%;
+    height: 95vh;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+}
+.comfirmBox {
+    width: 100%;
+    text-align: center;
+}
+.confirmlabel {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-left: 20%;
+    margin-bottom: 5%;
+    padding-bottom: 1%;
+    width: 65%;
+}
+.bottom-border {
+    border-bottom: 1px solid #075c86;
+}
+.confirmlabel label {
+    width: 50%;
+}
+.submit-button button {
+    background: #3faf46 0% 0% no-repeat padding-box;
+    width: 20%;
+    border-radius: 3px;
+    margin-bottom: 3%;
+    cursor: pointer;
+}
+.submit-button button p {
+    text-align: center;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+.fix-input-button button {
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #075c86;
+    border: none; /* 枠線を消す */
+    outline: none; /* クリックしたときに表示される枠線を消す */
+    background: transparent; /* 背景の灰色を消す */
+    cursor: pointer;
+}
+/* 登録完了画面 */
+#thanks-page {
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    text-align: center;
+    padding-top: 10%;
+    height: 100%;
+}
+.thanks-title {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 4px solid #075c86;
+    border-radius: 6px;
+    width: 70%;
+    margin: 0 auto 10%;
+}
+.thanks-title p {
+    text-align: center;
+    font: normal normal bold 52px/75px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #075c86;
+}
+.free-counsel-field {
+    position: relative;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 4px solid #075c86;
+    border-radius: 6px;
+    width: 70%;
+    padding-left: 10%;
+    margin: 0 auto 10%;
+}
+.free-counsel-title {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    width: 70%;
+    background: #075c86 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+}
+.free-counsel-margin-bottom {
+    margin-bottom: 10%;
+}
+.free-counsel-title p {
+    text-align: center;
+    font: normal normal bold 52px/75px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+.process-counsel-title p {
+    text-align: left;
+    text-decoration: underline;
+    font: normal normal bold 46px/66px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #075c86;
+    margin-bottom: 4%;
+    margin-top: 8%;
+}
+.process-counsel {
+    width: 50%;
+    background: #075c86 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+.process-counsel p {
+    text-align: left;
+    font: normal normal bold 32px/46px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    margin-bottom: 4%;
+}
+.free-cousel-message p {
+    text-align: left;
+    font: normal normal bold 32px/46px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #075c86;
+    margin-bottom: 6%;
+}
+.line-field {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 5px solid #06c755;
+    border-radius: 5px;
+    width: 80%;
+    margin: 0 auto 10%;
+    padding: 5% 0;
+}
+.line-title p {
+    text-align: center;
+    font: normal normal bold 52px/75px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    margin-bottom: 4%;
+}
+.add-linefriend {
+    border-radius: 5px;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 4%;
+}
+.add-linefriend img {
+    width: 595px;
+    height: 178px;
+}
+.line-field-message {
+    width: 70%;
+    margin: 0 auto;
+}
+.line-field-message p {
+    text-align: center;
+    font: normal normal normal 32px/46px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+}
+.free-counsel-content-field {
+    position: relative;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 3px solid #075c86;
+    border-radius: 6px;
+    width: 80%;
+    padding-top: 5%;
+    margin: 0 auto;
+}
+.free-counsel-content-title {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    background: #075c86 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    width: 80%;
+}
+.free-counsel-content-title p {
+    text-align: center;
+    font: normal normal bold 52px/75px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+.free-counsel-content {
+    display: flex;
+    width: 95%;
+    margin: 5% auto 5%;
+}
+.free-counsel-content .item {
+    width: 10%;
+}
+.free-counsel-content p {
+    text-align: left;
+    font: normal normal bold 34px/49px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #075c86;
+}
+
+/* adminlogin画面 */
+#admin-login {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+}
+.admin-login-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.admin-login-wrap form {
+    width: 70%;
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+}
+#admin-login .login-email-field {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 5%;
+    margin-top: 10%;
+}
+#admin-login .login-email-field label {
+    text-align: center;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    width: 20%;
+    margin-right: 5%;
+}
+#admin-login .login-email-field input {
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    height: 32px;
+    width: 30%;
+}
+#admin-login .login-password-field {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+}
+#admin-login .login-password-field label {
+    text-align: center;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    width: 20%;
+    margin-right: 5%;
+}
+#admin-login .login-password-field input {
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    height: 32px;
+    width: 30%;
+}
+#admin-login .login-button-field {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 10%;
+    width: 100%;
+}
+.login-button-field button {
+    color: white;
+    width: 35%;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    background: #3faf46 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* コンタクト一覧画面 */
+.contacts-table {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+}
+.contacts-wrap {
+    width: 90%;
+    height: 75%;
+}
+.contacts-wrap table {
+    width: 100%;
+    text-align: center;
+    font: normal normal bold 25px/36px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #000000;
+}
+.contacts-wrap table td,
+.contacts-wrap table th {
+    text-align: center;
+    vertical-align: middle;
+    height: 80px;
+    margin-bottom: 3%;
+    word-break: break-all;
+}
+table tr td {
+    border-bottom: 1px solid #075c86;
+}
+.contancts-delete-button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ef2843;
+    border-radius: 3px;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ef2843;
+    width: 100%;
+    cursor: pointer;
+}
+
+/* システム管理者ユーザ一覧画面 */
+#users-table {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+}
+.users-wrap {
+    width: 95%;
+    height: 75%;
+}
+.users-wrap table {
+    width: 100%;
+    text-align: center;
+    font: normal normal bold 25px/36px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #000000;
+    table-layout: fixed;
+}
+.users-wrap table td,
+.users-wrap table th {
+    text-align: center;
+    vertical-align: middle;
+    height: 80px;
+    margin-bottom: 3%;
+    word-break: break-all;
+}
+.users-wrap .error-message {
+    text-align: center;
+    font: normal normal bold 16px/18px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: red;
+}
+.users-title-width {
+    width: 30%;
+}
+
+.name-field input {
+    text-align: center;
+    border: none;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    font: normal normal bold 25px/36px Noto Sans CJK JP;
+    width: 45%;
+}
+.email-field input {
+    text-align: center;
+    border: none;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    font: normal normal bold 25px/36px Noto Sans CJK JP;
+    width: 100%;
+}
+.new-admin-name-field input {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    width: 30%;
+}
+.new-admin-email-field input {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    width: 60%;
+}
+.new-admin-password-field input {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    width: 80%;
+}
+.users-delete-button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ef2843;
+    border-radius: 3px;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ef2843;
+    width: 95%;
+    cursor: pointer;
+}
+.users-update-button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #3faf46;
+    border-radius: 3px;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #3faf46;
+    width: 95%;
+    cursor: pointer;
+}
+.users-new-create {
+    background: #3faf46 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    width: 95%;
+    cursor: pointer;
+}
+
+/* ペジネーション */
+.pagenation {
+    text-align: center;
+    width: 30%;
+    margin: 0 auto;
+}
+.navigation-filed {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5%;
+}
+.pagenation a {
+    text-decoration: none;
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+}
+.pagenation .selected-page-field {
+    display: inline;
+    width: 30px;
+    height: 30px;
+    background: #075c86 0% 0% no-repeat padding-box;
+    border-radius: 50%;
+}
+.pagenation .selected-page {
+    font: normal normal bold 22px/32px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+.pagenation .triangle-left {
+    display: inline-block;
+    border-style: solid;
+    border-width: 14px 24px 14px 0;
+    border-color: transparent #000 transparent transparent;
+}
+.pagenation .triangle-right {
+    display: inline-block;
+    border-style: solid;
+    border-width: 14px 0 14px 24px;
+    border-color: transparent transparent transparent #000;
+}
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+    .home-header-logo {
+        font: normal normal bold 22px Noto Sans CJK JP;
+    }
+    .home-header-nav li {
+        font: normal normal normal 11px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        margin: 0 2%;
+    }
+
+    .free-counsel-button-field a {
+        font: normal normal bold 11px Noto Sans CJK JP;
+    }
+    #home-header-img .home-header-title {
+        font: normal normal bold 30px Noto Sans CJK JP;
+    }
+    #home-header-img .home-header-coments .comment {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
+    #home-header-img .home-header-performance-card-title {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
+    #home-header-img .number .big {
+        font: normal normal bold 24px Noto Sans CJK JP;
+    }
+    #home-header-img .number .small {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
+}
+@media screen and (min-width: 767px) {
+    #responsive-home-header {
+        display: none;
+    }
+    #responsive-card-field {
+        display: none;
+    }
+}
+
+/*レスポンシブ化　ブレイクポイント768px*/
+@media screen and (max-width: 767px) {
+    .home-header {
+        display: none;
+    }
+    #HambergerMune {
+        display: none;
+    }
+    #responsive-home-header {
+        background: #ffffff 0% 0% no-repeat padding-box;
+        padding: 1%;
+    }
+    .responsive-home-header-wrap {
+        display: flex;
+        position: relative;
+    }
+    .responsive-home-header-logo {
+        text-align: left;
+        font: normal normal bold 25px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #333333;
+        white-space: nowrap;
+        margin: 0 1%;
+    }
+    #responsive-home-hamburger {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 100;
+        right: 20px;
+        transition: 0.4s;
+    }
+    #responsive-home-hamburger button {
+        border: none; /* 枠線を消す */
+        outline: none; /* クリックしたときに表示される枠線を消す */
+        background: transparent; /* 背景の灰色を消す */
+    }
+
+    #responsive-home-hamburger span {
+        position: absolute;
+        left: 2px;
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: black;
+        transition: 0.8s;
+    }
+
+    #responsive-home-hamburger span:nth-of-type(1) {
+        top: 10px; /* ハンバーガーメニューの1本目の棒 */
+    }
+
+    #responsive-home-hamburger span:nth-of-type(2) {
+        top: 20px; /* ハンバーガーメニューの2本目の棒 */
+    }
+
+    #responsive-home-hamburger span:nth-of-type(3) {
+        top: 30px; /* ハンバーガーメニューの3本目の棒 */
+    }
+    #home-header-img {
+        background-image: url(../img/smallhomeheader.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover; /* 画像のサイズを指定    */
+        width: 100%; /* 横幅のサイズを指定    */
+        height: 0;
+        padding-top: 116.14%;
+    }
+    #home-header-img .home-header-coments {
+        position: absolute;
+        top: 50%;
+        left: 55%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        padding-right: 80px;
+    }
+    #home-header-img .home-header-performance {
+        width: 100%;
+        margin-top: 5%;
+    }
+    #home-header-img .home-header-performance-wrap {
+        width: 100%;
+        margin-top: 10%;
+    }
+    #home-header-img .home-header-title {
+        font: normal normal bold 28px Noto Sans CJK JP;
+        margin-bottom: 10%;
+        text-align: left;
+    }
+    #home-header-img .home-header-coments .comment {
+        font: normal normal bold 11px Noto Sans CJK JP;
+    }
+    #home-header-img .home-header-performance-card-title {
+        text-align: center;
+        font: normal normal bold 11px Noto Sans CJK JP;
+        height: 50%;
+    }
+    #home-header-img .number {
+        margin-bottom: 10%;
+    }
+    #home-header-img .number .big {
+        font: normal normal bold 20px Noto Sans CJK JP;
+    }
+    #home-header-img .number .small {
+        font: normal normal bold 10px Noto Sans CJK JP;
+    }
+    #home-header-img .research-day {
+        font: normal normal 100 12px Noto Sans CJK JP;
+        opacity: 0.55;
+    }
+    #recommend-threemerit-field {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #recommend-threemerit-field .card {
+        width: 80%;
+        margin: 0 auto 5%;
+    }
+    #four-features-field .title {
+        background-color: #ffffff;
+    }
+    #four-features-field .title p {
+        color: #075c86;
+    }
+    #four-features-field .card-wrap {
+        display: block;
+        justify-content: none;
+    }
+    #four-features-field .card {
+        width: 90%;
+        margin: 0 auto 10%;
+        padding: 2%;
+    }
+    #four-features-field .number {
+        width: 100px;
+        height: 100px;
+        position: absolute;
+        left: 7%;
+        top: -5%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        position: relative;
+    }
+    .learning-curriculum-example-wrap .card-field {
+        display: none;
+    }
+    #responsive-card-field {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #responsive-card-field .bottom-border {
+        margin: 10% auto;
+    }
+    #responsive-card-field .content {
+        margin-bottom: 10%;
+    }
+    #responsive-card-field .content p {
+        text-align: left;
+        font: normal normal normal 34px/49px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #707070;
+    }
+    #review-field .review-field-wrap {
+        display: block;
+    }
+    #review-field .review {
+        width: 90%;
+        margin: 0 auto 10%;
+    }
+    #free-counsel-steps .points ul {
+        text-align: left;
+        font: normal normal normal 16px/24px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #707070;
+    }
+    #questionnaire-field .questionnaire-field-wrap {
+        display: block;
+    }
+
+    #questionnaire-field .questionnaire-card {
+        width: auto;
+        margin-bottom: 2%;
+    }
+    .process-counsel {
+        width: 80%;
+    }
+    .free-counsel-content-title p {
+        font-size: 35px;
+    }
+}
