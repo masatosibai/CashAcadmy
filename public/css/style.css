@@ -1647,10 +1647,10 @@ table tr td {
 }
 @media screen and (min-width: 767px) {
     #responsive-home-header {
-        display: none;
+        display: none !important;
     }
     #responsive-card-field {
-        display: none;
+        display: none !important;
     }
 }
 
@@ -1664,7 +1664,7 @@ table tr td {
     }
     #responsive-home-header {
         background: #ffffff 0% 0% no-repeat padding-box;
-        padding: 1%;
+        padding: 3% 2%;
     }
     .responsive-home-header-wrap {
         display: flex;
@@ -1672,7 +1672,7 @@ table tr td {
     }
     .responsive-home-header-logo {
         text-align: left;
-        font: normal normal bold 25px Noto Sans CJK JP;
+        font: normal normal bold 16px Noto Sans CJK JP;
         letter-spacing: 0px;
         color: #333333;
         white-space: nowrap;
@@ -1684,7 +1684,8 @@ table tr td {
         position: absolute;
         cursor: pointer;
         z-index: 100;
-        right: 20px;
+        top: -8;
+        right: 0;
         transition: 0.4s;
     }
     #responsive-home-hamburger button {
@@ -1718,8 +1719,8 @@ table tr td {
         background-image: url(../img/smallhomeheader.png);
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: cover; /* 画像のサイズを指定    */
-        width: 100%; /* 横幅のサイズを指定    */
+        background-size: cover;
+        width: 100%;
         height: 0;
         padding-top: 116.14%;
     }
@@ -1730,24 +1731,31 @@ table tr td {
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        padding-right: 80px;
+        padding-right: 30px;
+        width: 80%;
     }
     #home-header-img .home-header-performance {
+        margin-top: 15%;
         width: 100%;
-        margin-top: 5%;
-    }
-    #home-header-img .home-header-performance-wrap {
-        width: 100%;
-        margin-top: 10%;
     }
     #home-header-img .home-header-title {
-        font: normal normal bold 28px Noto Sans CJK JP;
+        font: normal normal bold 30px Noto Sans CJK JP;
         margin-bottom: 10%;
         text-align: left;
+        white-space: nowrap;
     }
     #home-header-img .home-header-coments .comment {
         font: normal normal bold 11px Noto Sans CJK JP;
+        white-space: nowrap;
     }
+    #home-header-img .home-header-comments-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: table;
+        margin: 0 auto;
+    }
+
     #home-header-img .home-header-performance-card-title {
         text-align: center;
         font: normal normal bold 11px Noto Sans CJK JP;
@@ -1757,14 +1765,17 @@ table tr td {
         margin-bottom: 10%;
     }
     #home-header-img .number .big {
-        font: normal normal bold 20px Noto Sans CJK JP;
+        font: normal normal bold 24px Noto Sans CJK JP;
+        white-space: nowrap;
     }
     #home-header-img .number .small {
-        font: normal normal bold 10px Noto Sans CJK JP;
+        font: normal normal bold 12px Noto Sans CJK JP;
+        white-space: nowrap;
     }
-    #home-header-img .research-day {
-        font: normal normal 100 12px Noto Sans CJK JP;
+    #home-header-img .research-day p {
+        font: normal normal 100 15px Noto Sans CJK JP;
         opacity: 0.55;
+        white-space: nowrap;
     }
     #recommend-threemerit-field {
         display: block;

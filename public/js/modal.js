@@ -17,10 +17,8 @@ for (const list of hambergarMenuListArray) {
 }
 hambergarBtn.addEventListener('click', function() {
   
-	if(hambergarMenu.style.display=="none"){
     hambergarMenu.style.display = "block";
     responsiveHomeHeader.style.display = "none";
-  }
   
 }, false);
 
