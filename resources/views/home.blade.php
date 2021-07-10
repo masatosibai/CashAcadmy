@@ -35,7 +35,6 @@
             <p class="home-header-title">
                 短期間で<br />お金の教養を身につける
             </p>
-
             <div class="comment">
                 <P>Cash Acdemyは投資初心者・未経験者の人が</P>
             </div>
