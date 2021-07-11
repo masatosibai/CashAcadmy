@@ -588,14 +588,14 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
             </div>
             <div class="sp-review-img-comment">
                 <div class="img"><img src="/img/review.png" alt="" /></div>
-                <div class="sp-comment sp-display">
+                <div class="sp-comment sp-display" style="display: none;">
                 <p class="name">H.Sさん</p>
                 <br />
                 <p class="age-profession">20代半ば<br />デザイナー</p>
                 <br />
                 </div>
             </div>
-            <div class="comment sp-display">
+            <div class="comment sp-display" style="display: none;">
                 <p class="before-after">受講前</p>
                 <br />
                 <p class="message">
@@ -634,14 +634,14 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
             </div>
             <div class="sp-review-img-comment">
             <div class="img"><img src="/img/review.png" alt="" /></div>
-            <div class="sp-comment sp-display">
+            <div class="sp-comment sp-display" style="display: none;">
                 <p class="name">H.Sさん</p>
                 <br />
                 <p class="age-profession">20代半ば<br />デザイナー</p>
                 <br />
             </div>
             </div>
-            <div class="comment sp-display">
+            <div class="comment sp-display" style="display: none;">
                 <p class="before-after">受講前</p>
                 <br />
                 <p class="message">
@@ -680,14 +680,14 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
             </div>
             <div class="sp-review-img-comment">
             <div class="img"><img src="/img/review.png" alt="" /></div>
-            <div class="sp-comment sp-display">
+            <div class="sp-comment sp-display" style="display: none;">
                 <p class="name">H.Sさん</p>
                 <br />
                 <p class="age-profession">20代半ば<br />デザイナー</p>
                 <br />
             </div>
             </div>
-            <div class="comment sp-display">
+            <div class="comment sp-display" style="display: none;">
                 <p class="before-after">受講前</p>
                 <br />
                 <p class="message">
@@ -738,7 +738,7 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
             </div>
             <div class="comment">
                 <p>
-                    「お金の悩みがなくなった」「将来の不安が減った」「マンツーマンで丁寧に教えてもらった」「体系的でわかりやすかった」などの声をいただいております。
+                    「お金の悩みがなくなった」「将来の</p><p>不安が減った」「マンツーマンで丁寧</p><p>に教えてもらった」「体系的でわかりや</p><p>すかった」などの声をいただいておりま</p><p>す。
                 </p>
             </div>
             <div class="research-day">
@@ -755,7 +755,7 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
             </div>
             <div class="comment">
                 <p>
-                    CashAcademyはこれから学び始める方でもカンタンに分かるように作られているため、挫折せず続けることができます。
+                    CashAcademyはこれから学び始める方</p><p>でもカンタンに分かるように作られて</p><p>いるため、挫折せず続けることができ</p><p>ます。
                 </p>
             </div>
             <div class="research-day">
@@ -772,7 +772,7 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
             </div>
             <div class="comment">
                 <p>
-                    お金の勉強は早いほうが効果が出やすく、長期的視点で取り組んだほうがいいため、若い方がメインです。
+                    お金の勉強は早いほうが効果が出やす</p><p>く、長期的視点で取り組んだほうがい</p><p>いため、若い方がメインです。
                 </p>
             </div>
             <div class="research-day">

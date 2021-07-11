@@ -881,21 +881,22 @@ body {
 }
 #questionnaire-field .questionnaire-field-wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
-    width: 80.52%;
+    width: 95%;
 }
 #questionnaire-field .questionnaire-card {
-    width: 30%;
+    width: 35%;
     background: #ffffff 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
     border: 1px solid #707070;
     border-radius: 6px;
-    padding: 5% 1%;
+    padding: 5% 0;
+    margin: 0 1%;
 }
 #questionnaire-field .questionnaire-card-title p {
     text-align: center;
-    font: normal normal bold 25px Noto Sans CJK JP;
+    font: normal normal bold 15px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
     margin-bottom: 5%;
@@ -905,30 +906,42 @@ body {
 }
 #questionnaire-field .number .big {
     text-align: center;
-    font: normal normal bold 90px Noto Sans CJK JP;
+    font: normal normal bold 65px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #f3c40a;
 }
 #questionnaire-field .number .small {
     text-align: center;
-    font: normal normal bold 39px/56px Noto Sans CJK JP;
+    font: normal normal bold 25px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #f3c40a;
 }
+#questionnaire-field .comment {
+    text-align: center;
+    display: table;
+    margin: 0 auto;
+    padding-right: 8%;
+}
 #questionnaire-field .comment p {
     text-align: left;
-    font: normal normal normal 18px Noto Sans CJK JP;
+    font: normal normal normal 14px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #707070;
     width: 80%;
+    white-space: nowrap;
     margin: 0 auto;
 }
+#questionnaire-field .research-day {
+    display: table;
+    text-align: center;
+    margin: 0 auto;
+    padding-right: 15%;
+}
 #questionnaire-field .research-day p {
-    text-align: left;
-    font: normal normal bold 14px/20px Noto Sans CJK JP;
+    text-align: center;
+    font: normal normal bold 12px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #707070;
-    width: 80%;
     margin: 0 auto;
 }
 #question-field {
@@ -1717,6 +1730,99 @@ table tr td {
     }
     #review-field .message {
         font: normal normal normal 12px Noto Sans CJK JP;
+    }
+    #questionnaire-field {
+        background-image: url(../img/questionnaire.png);
+        margin: 0 auto;
+        padding: 3% 2%;
+    }
+    #questionnaire-field .title {
+        margin: 0 auto;
+        text-align: center;
+        margin-bottom: 1%;
+    }
+    #questionnaire-field .title p {
+        letter-spacing: 0px;
+        color: #ffffff;
+    }
+    #questionnaire-field .short-under-line {
+        width: 3%;
+        margin: 0 auto;
+        border-bottom: 3px solid #ffffff;
+        margin-bottom: 5%;
+    }
+    #questionnaire-field .questionnaire-field-wrap {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        width: 95%;
+    }
+    #questionnaire-field .questionnaire-card {
+        width: 35%;
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 0px 3px 6px #00000029;
+        border: 1px solid #707070;
+        border-radius: 6px;
+        padding: 5% 0;
+        margin: 0 1%;
+    }
+    #questionnaire-field .questionnaire-card-title p {
+        text-align: center;
+        font: normal normal bold 15px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #333333;
+        margin-bottom: 5%;
+    }
+    #questionnaire-field .number {
+        text-align: center;
+    }
+    #questionnaire-field .number .big {
+        text-align: center;
+        font: normal normal bold 45px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #f3c40a;
+    }
+    #questionnaire-field .number .small {
+        text-align: center;
+        font: normal normal bold 20px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #f3c40a;
+    }
+    #questionnaire-field .comment {
+        text-align: center;
+        display: table;
+        margin: 0 auto;
+        padding-right: 8%;
+    }
+    #questionnaire-field .comment p {
+        text-align: left;
+        font: normal normal normal 14px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #707070;
+        width: 80%;
+        white-space: nowrap;
+        margin: 0 auto;
+    }
+    #questionnaire-field .research-day {
+        display: table;
+        text-align: center;
+        margin: 0 auto;
+        padding-right: 10%;
+    }
+    #questionnaire-field .comment p {
+        text-align: left;
+        font: normal normal normal 10px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #707070;
+        white-space: nowrap;
+        margin: 0 auto;
+    }
+    #questionnaire-field .research-day p {
+        text-align: left;
+        font: normal normal bold 10px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #707070;
+        margin: 0 auto;
     }
 }
 @media screen and (min-width: 767px) {
