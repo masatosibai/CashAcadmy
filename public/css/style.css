@@ -340,7 +340,7 @@ body {
 }
 .HambergerMune-nav li {
     text-align: center;
-    font: normal normal bold 20px/29px Noto Sans CJK JP;
+    font: normal normal bold 17px Noto Sans CJK JP;
     letter-spacing: 0px;
     margin-bottom: 5%;
 }
@@ -352,13 +352,13 @@ body {
     background: #ef2843 0% 0% no-repeat padding-box;
     border-radius: 59px;
     text-align: center;
-    padding: 5px 5px;
-    width: 80%;
+    padding: 10px 30px;
+    width: auto;
     margin: 0 auto;
     bottom: 0;
 }
 #HambergerMune-button-field a {
-    font: normal normal bold 24px/35px Noto Sans CJK JP;
+    font: normal normal bold 17px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #ffffff;
     text-decoration: none;
@@ -822,40 +822,40 @@ body {
 }
 #review-field .title {
     text-align: center;
-    font: normal normal bold 25px Noto Sans CJK JP;
+    font: normal normal bold 17px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
     margin: 0 auto;
-    padding-bottom: 5%;
+    padding-bottom: 8%;
     width: 62.87%;
 }
 #review-field .img {
-    width: 62.87%;
-    margin: 0 auto 5%;
+    width: 80%;
+    margin: 0 auto 15%;
 }
 #review-field .img img {
     width: 100%;
 }
 #review-field .comment {
-    width: 62.87%;
+    width: 80%;
     margin: 0 auto;
 }
 #review-field .name,
 #review-field .before-after {
     text-align: left;
-    font: normal normal bold 25px Noto Sans CJK JP;
+    font: normal normal bold 17px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
 }
 #review-field .age-profession {
     text-align: left;
-    font: normal normal bold 25px/36px Noto Sans CJK JP;
+    font: normal normal bold 17px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
 }
 #review-field .message {
     text-align: left;
-    font: normal normal normal 18px Noto Sans CJK JP;
+    font: normal normal normal 15px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
 }
@@ -1705,6 +1705,19 @@ table tr td {
         font: normal normal normal 13px Noto Sans CJK JP;
         padding: 5% 5%;
     }
+    #review-field .title {
+        font: normal normal bold 13px Noto Sans CJK JP;
+    }
+    #review-field .name,
+    #review-field .before-after {
+        font: normal normal bold 13px Noto Sans CJK JP;
+    }
+    #review-field .age-profession {
+        font: normal normal bold 13px Noto Sans CJK JP;
+    }
+    #review-field .message {
+        font: normal normal normal 12px Noto Sans CJK JP;
+    }
 }
 @media screen and (min-width: 767px) {
     #responsive-home-header {
@@ -1803,6 +1816,7 @@ table tr td {
         margin-bottom: 10%;
         text-align: left;
         white-space: nowrap;
+        padding-left: 3%;
     }
     #home-header-img .home-header-coments .comment {
         font: normal normal bold 11px Noto Sans CJK JP;
@@ -1814,6 +1828,9 @@ table tr td {
         align-items: center;
         display: table;
         margin: 0 auto;
+    }
+    #home-header-img .home-header-performance-wrap {
+        padding-left: 5%;
     }
 
     #home-header-img .home-header-performance-card-title {
@@ -1833,6 +1850,7 @@ table tr td {
         font: normal normal 100 15px Noto Sans CJK JP;
         opacity: 0.55;
         white-space: nowrap;
+        padding-left: 5%;
     }
 
     #recommend-threemerit-field .number {
@@ -1990,6 +2008,10 @@ table tr td {
     #free-counsel-steps .points ul li {
         white-space: nowrap;
     }
+    #review-field {
+        width: 95%;
+        margin: 0 auto 5%;
+    }
     #review-field .review-field-wrap {
         display: block;
     }
@@ -2022,7 +2044,58 @@ table tr td {
         font: normal normal bold 22px Meiryo;
     }
     #changeWeek button {
+        background: #075c86 0% 0% no-repeat padding-box;
+        border: 1px solid #075c86;
         font: normal normal bold 21px Meiryo;
+        color: #ffffff;
+        width: 100%;
+        padding: 5px 5px;
+    }
+    #mainTable table {
+        width: 100%;
+        height: 80%;
+        table-layout: fixed;
+    }
+    #review-field .short-under-line {
+        display: none !important;
+    }
+    #review-field .top-title p {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    #review-field .title {
+        font: normal normal bold 26px Noto Sans CJK JP;
+        margin: 0 auto;
+        padding-bottom: 8%;
+        width: 80%;
+    }
+    .sp-review-img-comment {
+        display: flex;
+        justify-content: center;
+    }
+    #review-field .img {
+        width: 45%;
+        margin: 0 auto 10%;
+    }
+    #review-field .img img {
+        width: 110%;
+        height: 100%;
+    }
+    #review-field .sp-comment {
+        width: 40%;
+        display: table;
+        text-align: left;
+        padding-top: 10%;
+        margin-left: 5%;
+    }
+    #review-field .name,
+    #review-field .before-after {
+        text-align: left;
+        font: normal normal bold 20px Noto Sans CJK JP;
+    }
+    #review-field .comment {
+        width: 90%;
+        margin: 0 auto;
     }
 }
 @media screen and (max-width: 420px) {
@@ -2112,6 +2185,7 @@ table tr td {
         margin-bottom: 10%;
         text-align: left;
         white-space: nowrap;
+        padding-left: 3%;
     }
     #home-header-img .home-header-coments .comment {
         font: normal normal bold 10px Noto Sans CJK JP;
@@ -2123,6 +2197,9 @@ table tr td {
         align-items: center;
         display: table;
         margin: 0 auto;
+    }
+    #home-header-img .home-header-performance-wrap {
+        padding-left: 5%;
     }
 
     #home-header-img .home-header-performance-card-title {
@@ -2142,6 +2219,7 @@ table tr td {
         font: normal normal 100 12px Noto Sans CJK JP;
         opacity: 0.55;
         white-space: nowrap;
+        padding-left: 5%;
     }
 
     #recommend-threemerit-field .number {
@@ -2243,11 +2321,11 @@ table tr td {
     }
 
     .content-wrap .number {
-        font: normal normal bold 28px Meiryo;
+        font: normal normal bold 24px Meiryo;
         margin-right: 5%;
     }
     .content-wrap .content-title {
-        font: normal normal bold 20px Noto Sans CJK JP;
+        font: normal normal bold 16px Noto Sans CJK JP;
     }
     #responsive-card-field .content {
         margin: 0 auto 10%;
@@ -2302,6 +2380,10 @@ table tr td {
     #free-counsel-steps .points ul li {
         white-space: nowrap;
     }
+    #review-field .review {
+        width: 90%;
+        margin: 0 auto 10%;
+    }
     #review-field .review-field-wrap {
         display: block;
     }
@@ -2331,9 +2413,64 @@ table tr td {
         padding: 5% 5%;
     }
     #changeWeek .today {
-        font: normal normal bold 18px Meiryo;
+        font: normal normal bold 15px Meiryo;
     }
     #changeWeek button {
-        font: normal normal bold 18px Meiryo;
+        background: #075c86 0% 0% no-repeat padding-box;
+        border: 1px solid #075c86;
+        font: normal normal bold 14px Meiryo;
+        color: #ffffff;
+        width: 100%;
+        padding: 5px 10px;
+    }
+    #mainTable table {
+        width: 100%;
+        height: 80%;
+        table-layout: fixed;
+    }
+    #review-field {
+        width: 95%;
+        margin: 0 auto 5%;
+    }
+    #review-field .short-under-line {
+        display: none !important;
+    }
+    #review-field .top-title p {
+        margin-top: 10%;
+        margin-bottom: 5%;
+    }
+    #review-field .title {
+        font: normal normal bold 20px Noto Sans CJK JP;
+        margin: 0 auto;
+        padding-bottom: 8%;
+        width: 80%;
+    }
+    .sp-review-img-comment {
+        display: flex;
+        justify-content: center;
+    }
+    #review-field .img {
+        width: 45%;
+        margin: 0 auto 10%;
+    }
+    #review-field .img img {
+        width: 110%;
+        height: 100%;
+    }
+    #review-field .sp-comment {
+        width: 40%;
+        display: table;
+        text-align: left;
+        padding-top: 10%;
+        margin-left: 5%;
+    }
+    #review-field .name,
+    #review-field .before-after {
+        text-align: left;
+        font: normal normal bold 20px Noto Sans CJK JP;
+    }
+    #review-field .comment {
+        width: 90%;
+        margin: 0 auto;
     }
 }

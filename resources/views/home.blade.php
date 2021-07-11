@@ -154,7 +154,7 @@
             <div class="comment sp-display" style="display: none">
                 <p>
                     プロのファイナンシャルコンサルタントが</p><p>マンツーマンであなたをサポートします、</p><p>
-                    お金に関する知識はもちろん、目標設定、</p><p>最適な学習方法の提案、モチベーションの維持</p><p>
+                    お金に関する知識はもちろん、目標設定、</p><p>最適な学習方法の提案、モチベーションの</p><p>維持</p><p>
                     などをサポートし、受講後も継続できるよ</p><p>うに習慣化することが可能です。
                 </p>
             </div>
@@ -586,8 +586,30 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
             <div class="title">
                 <p>漠然としたお金への<br />不安が消えた</p>
             </div>
-            <div class="img"><img src="/img/review.png" alt="" /></div>
-            <div class="comment">
+            <div class="sp-review-img-comment">
+                <div class="img"><img src="/img/review.png" alt="" /></div>
+                <div class="sp-comment sp-display">
+                <p class="name">H.Sさん</p>
+                <br />
+                <p class="age-profession">20代半ば<br />デザイナー</p>
+                <br />
+                </div>
+            </div>
+            <div class="comment sp-display">
+                <p class="before-after">受講前</p>
+                <br />
+                <p class="message">
+                    以前の私は「貯金は今のままでも足りるのか」「知らない間に損をしているとがあるかもしれない」といったお金への不安を抱えて居ました。
+                </p>
+                <br />
+                <p class="before-after">受講後</p>
+                <br />
+                <p class="message">
+                    貯金は「なぜ、どのぐらい必要なのか」を知ることができました。また、自分が気付いていなかった大きな支出や国がやっている優遇制度を知ることができました。漠然とした不安が消えただけでなく、自信を持てるようになりました。
+                </p>
+                <br />
+            </div>            
+            <div class="comment pc-display">
                 <p class="name">H.Sさん</p>
                 <br />
                 <p class="age-profession">20代半ば<br />デザイナー</p>
@@ -610,8 +632,30 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
             <div class="title">
                 <p>漠然としたお金への<br />不安が消えた</p>
             </div>
+            <div class="sp-review-img-comment">
             <div class="img"><img src="/img/review.png" alt="" /></div>
-            <div class="comment">
+            <div class="sp-comment sp-display">
+                <p class="name">H.Sさん</p>
+                <br />
+                <p class="age-profession">20代半ば<br />デザイナー</p>
+                <br />
+            </div>
+            </div>
+            <div class="comment sp-display">
+                <p class="before-after">受講前</p>
+                <br />
+                <p class="message">
+                    以前の私は「貯金は今のままでも足りるのか」「知らない間に損をしているとがあるかもしれない」といったお金への不安を抱えて居ました。
+                </p>
+                <br />
+                <p class="before-after">受講後</p>
+                <br />
+                <p class="message">
+                    貯金は「なぜ、どのぐらい必要なのか」を知ることができました。また、自分が気付いていなかった大きな支出や国がやっている優遇制度を知ることができました。漠然とした不安が消えただけでなく、自信を持てるようになりました。
+                </p>
+                <br />
+            </div>
+            <div class="comment pc-display">
                 <p class="name">H.Sさん</p>
                 <br />
                 <p class="age-profession">20代半ば<br />デザイナー</p>
@@ -628,14 +672,36 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
                     貯金は「なぜ、どのぐらい必要なのか」を知ることができました。また、自分が気付いていなかった大きな支出や国がやっている優遇制度を知ることができました。漠然とした不安が消えただけでなく、自信を持てるようになりました。
                 </p>
                 <br />
-            </div>
+            </div>            
         </div>
         <div class="review">
             <div class="title">
                 <p>漠然としたお金への<br />不安が消えた</p>
             </div>
+            <div class="sp-review-img-comment">
             <div class="img"><img src="/img/review.png" alt="" /></div>
-            <div class="comment">
+            <div class="sp-comment sp-display">
+                <p class="name">H.Sさん</p>
+                <br />
+                <p class="age-profession">20代半ば<br />デザイナー</p>
+                <br />
+            </div>
+            </div>
+            <div class="comment sp-display">
+                <p class="before-after">受講前</p>
+                <br />
+                <p class="message">
+                    以前の私は「貯金は今のままでも足りるのか」「知らない間に損をしているとがあるかもしれない」といったお金への不安を抱えて居ました。
+                </p>
+                <br />
+                <p class="before-after">受講後</p>
+                <br />
+                <p class="message">
+                    貯金は「なぜ、どのぐらい必要なのか」を知ることができました。また、自分が気付いていなかった大きな支出や国がやっている優遇制度を知ることができました。漠然とした不安が消えただけでなく、自信を持てるようになりました。
+                </p>
+                <br />
+            </div>
+            <div class="comment pc-display">
                 <p class="name">H.Sさん</p>
                 <br />
                 <p class="age-profession">20代半ば<br />デザイナー</p>
