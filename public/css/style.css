@@ -381,6 +381,7 @@ body {
 /*共通*/
 .title-font {
     font: normal normal bold 25px Noto Sans CJK JP;
+    margin-bottom: 2% !important;
 }
 .padding-center {
     padding: 0 3%;
@@ -521,7 +522,7 @@ body {
 #four-features-field .title {
     background: #075c86 0% 0% no-repeat padding-box;
     width: 40.41%;
-    margin: 0 auto 10%;
+    margin: 0 auto 10% !important;
     padding: 10px 0;
 }
 #four-features-field .title p {
@@ -606,7 +607,6 @@ body {
     letter-spacing: 0px;
     color: #ffffff;
     padding-top: 5%;
-    padding-bottom: 2%;
 }
 .learning-curriculum-example .short-under-line {
     border-bottom: 3px solid #ffffff;
@@ -947,7 +947,7 @@ body {
 #question-field {
     background: #f5f5f5 0% 0% no-repeat padding-box;
     border-radius: 3px;
-    width: 80%;
+    width: 90%;
     padding: 5% 0;
     margin: 5% auto 5%;
 }
@@ -964,7 +964,7 @@ body {
     width: 3%;
     margin: 0 auto;
     border-bottom: 3px solid #075c86;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 #question-field .question-answer {
     width: 85%;
@@ -973,20 +973,20 @@ body {
 }
 #question-field .question-answer .question-mark {
     text-align: center;
-    font: normal normal bold 40px Noto Sans CJK JP;
+    font: normal normal bold 35px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #075c86;
     margin-right: 3%;
 }
 #question-field .question-answer .question {
     text-align: left;
-    font: normal normal bold 25px Noto Sans CJK JP;
+    font: normal normal bold 20px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
 }
 #question-field .question-answer .answer {
     text-align: left;
-    font: normal normal normal 20px Noto Sans CJK JP;
+    font: normal normal normal 14px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #707070;
     margin-top: 1%;
@@ -1795,13 +1795,7 @@ table tr td {
         padding-right: 8%;
     }
     #questionnaire-field .comment p {
-        text-align: left;
         font: normal normal normal 14px Noto Sans CJK JP;
-        letter-spacing: 0px;
-        color: #707070;
-        width: 80%;
-        white-space: nowrap;
-        margin: 0 auto;
     }
     #questionnaire-field .research-day {
         display: table;
@@ -1810,19 +1804,30 @@ table tr td {
         padding-right: 10%;
     }
     #questionnaire-field .comment p {
-        text-align: left;
         font: normal normal normal 10px Noto Sans CJK JP;
-        letter-spacing: 0px;
-        color: #707070;
-        white-space: nowrap;
-        margin: 0 auto;
     }
     #questionnaire-field .research-day p {
-        text-align: left;
         font: normal normal bold 10px Noto Sans CJK JP;
+    }
+    #question-field .question-answer .question-mark {
+        text-align: center;
+        font: normal normal bold 30px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #075c86;
+        margin-right: 3%;
+    }
+    #question-field .question-answer .question {
+        text-align: left;
+        font: normal normal bold 16px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #333333;
+    }
+    #question-field .question-answer .answer {
+        text-align: left;
+        font: normal normal normal 12px Noto Sans CJK JP;
         letter-spacing: 0px;
         color: #707070;
-        margin: 0 auto;
+        margin-top: 1%;
     }
 }
 @media screen and (min-width: 767px) {
@@ -2203,6 +2208,75 @@ table tr td {
         width: 90%;
         margin: 0 auto;
     }
+    #questionnaire-field .short-under-line {
+        width: 10%;
+    }
+    #questionnaire-field .questionnaire-card-title p {
+        font: normal normal bold 24px Noto Sans CJK JP;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+    #questionnaire-field .number .big {
+        text-align: center;
+        font: normal normal bold 80px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #f3c40a;
+    }
+    #questionnaire-field .number .small {
+        text-align: center;
+        font: normal normal bold 25px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #f3c40a;
+    }
+    #questionnaire-field .comment p {
+        font: normal normal normal 17px Noto Sans CJK JP;
+    }
+    #questionnaire-field .research-day p {
+        font: normal normal bold 15px Noto Sans CJK JP;
+    }
+    #question-field {
+        background: #ffffff 0% 0% no-repeat padding-box;
+    }
+    #question-field .short-under-line {
+        width: 10%;
+        margin-bottom: 5%;
+    }
+    .questions-field {
+        display: flex !important;
+        justify-content: left;
+    }
+    #question-field .sp-question-field {
+        background-color: #f5f5f5;
+        padding: 10%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    #question-field .question-answer {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #question-field .question-answer .question-mark {
+        text-align: center;
+        font: normal normal bold 45px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #075c86;
+        margin-right: 4%;
+    }
+    #question-field .question-answer .question {
+        text-align: left;
+        font: normal normal bold 13px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #333333;
+    }
+    #question-field .question-answer .answer {
+        text-align: left;
+        font: normal normal normal 13px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #707070;
+        margin-top: 1%;
+    }
 }
 @media screen and (max-width: 420px) {
     .home-header {
@@ -2348,6 +2422,7 @@ table tr td {
     }
     .title-font {
         font: normal normal bold 20px Noto Sans CJK JP;
+        margin-bottom: 3% !important;
     }
     .pc-display {
         display: none !important;
@@ -2578,5 +2653,74 @@ table tr td {
     #review-field .comment {
         width: 90%;
         margin: 0 auto;
+    }
+    #questionnaire-field .short-under-line {
+        width: 10%;
+    }
+    #questionnaire-field .questionnaire-card-title p {
+        font: normal normal bold 18px Noto Sans CJK JP;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+    #questionnaire-field .number .big {
+        text-align: center;
+        font: normal normal bold 50px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #f3c40a;
+    }
+    #questionnaire-field .number .small {
+        text-align: center;
+        font: normal normal bold 20px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #f3c40a;
+    }
+    #questionnaire-field .comment p {
+        font: normal normal normal 12px Noto Sans CJK JP;
+    }
+    #questionnaire-field .research-day p {
+        font: normal normal bold 11px Noto Sans CJK JP;
+    }
+    #question-field {
+        background: #ffffff 0% 0% no-repeat padding-box;
+    }
+    #question-field .short-under-line {
+        width: 10%;
+        margin-bottom: 5%;
+    }
+    .questions-field {
+        display: flex !important;
+        justify-content: left;
+    }
+    #question-field .sp-question-field {
+        background-color: #f5f5f5;
+        padding: 10%;
+        margin: 0 auto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    #question-field .question-answer {
+        margin: 0 auto;
+        width: 100%;
+    }
+    #question-field .question-answer .question-mark {
+        text-align: center;
+        font: normal normal bold 35px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #075c86;
+        margin-right: 4%;
+    }
+    #question-field .question-answer .question {
+        text-align: left;
+        font: normal normal bold 10px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #333333;
+    }
+    #question-field .question-answer .answer {
+        text-align: left;
+        font: normal normal normal 10px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #707070;
+        margin-top: 1%;
     }
 }
