@@ -735,7 +735,7 @@ body {
     margin-bottom: 5%;
 }
 #free-counsel-process .comment {
-    font: normal normal normal 18px Noto Sans CJK JP;
+    font: normal normal normal 16px Noto Sans CJK JP;
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #075c86;
     border-radius: 6px;
@@ -772,7 +772,7 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px 0;
-    margin: 0 auto;
+    margin: 0 auto 3%;
     width: 80%;
 }
 #changeWeek .changeWeeek-button-field {
@@ -782,7 +782,7 @@ body {
     background: #ffffff 0% 0% no-repeat padding-box;
     border: 1px solid #333333;
     text-align: left;
-    font: normal normal bold 31px/47px Meiryo;
+    font: normal normal bold 25px Meiryo;
     letter-spacing: 0px;
     color: #333333;
     width: 100%;
@@ -791,7 +791,7 @@ body {
 }
 #changeWeek .today {
     text-align: center;
-    font: normal normal bold 31px/47px Meiryo;
+    font: normal normal bold 25px Meiryo;
     letter-spacing: 0px;
     color: #333333;
 }
@@ -1701,6 +1701,10 @@ table tr td {
     #free-counsel-steps .points ul {
         font: normal normal normal 14px noto Sans CJK JP;
     }
+    #free-counsel-process .comment {
+        font: normal normal normal 13px Noto Sans CJK JP;
+        padding: 5% 5%;
+    }
 }
 @media screen and (min-width: 767px) {
     #responsive-home-header {
@@ -1712,7 +1716,7 @@ table tr td {
 }
 
 /*レスポンシブ化　ブレイクポイント768px*/
-@media screen and (min-width: 430px) and (max-width: 767px) {
+@media screen and (min-width: 400px) and (max-width: 767px) {
     .home-header {
         display: none;
     }
@@ -2008,8 +2012,21 @@ table tr td {
     .free-counsel-content-title p {
         font-size: 35px;
     }
+    #free-counsel-process .short-under-line {
+        width: 10%;
+    }
+    #free-counsel-process .comment {
+        font: normal normal normal 12px Noto Sans CJK JP;
+        padding: 5% 5%;
+    }
+    #changeWeek .today {
+        font: normal normal bold 22px Meiryo;
+    }
+    #changeWeek button {
+        font: normal normal bold 21px Meiryo;
+    }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 400px) {
     .home-header {
         display: none;
     }
@@ -2197,6 +2214,9 @@ table tr td {
     #four-features-field .comment {
         font: normal normal normal 13px Noto Sans CJK JP;
     }
+    #learning-curriculum-example-field {
+        margin-bottom: 10%;
+    }
 
     .learning-curriculum-example-wrap .card-field {
         display: none;
@@ -2304,5 +2324,18 @@ table tr td {
     }
     .free-counsel-content-title p {
         font-size: 35px;
+    }
+    #free-counsel-process .short-under-line {
+        width: 10%;
+    }
+    #free-counsel-process .comment {
+        font: normal normal normal 12px Noto Sans CJK JP;
+        padding: 5% 5%;
+    }
+    #changeWeek .today {
+        font: normal normal bold 18px Meiryo;
+    }
+    #changeWeek button {
+        font: normal normal bold 18px Meiryo;
     }
 }
