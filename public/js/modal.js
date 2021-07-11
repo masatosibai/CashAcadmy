@@ -4,7 +4,6 @@ let hambergarMenu = document.getElementById('HambergerMune');
 let responsiveHomeHeader = document.getElementById('responsive-home-header');
 let hambergarMenuList = document.getElementsByClassName("hambergar-menu-list");
 let hambergarMenuListArray = Array.prototype.slice.call(hambergarMenuList);
-console.log(hambergarMenuListArray[0]);
 
 for (const list of hambergarMenuListArray) {
 

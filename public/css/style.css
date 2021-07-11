@@ -380,7 +380,7 @@ body {
 }
 /*共通*/
 .title-font {
-    font: normal normal bold 35px Noto Sans CJK JP;
+    font: normal normal bold 25px Noto Sans CJK JP;
 }
 .padding-center {
     padding: 0 3%;
@@ -402,7 +402,6 @@ body {
     width: 100%; /* 横幅のサイズを指定    */
     height: 0;
     padding-top: 49.6%;
-    margin-bottom: 5%;
 }
 #home-header-img .home-header-coments {
     position: absolute;
@@ -457,14 +456,12 @@ body {
     font: normal normal bold 36px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #ffffff;
-    text-shadow: 0px 3px 13px #0e5172;
 }
 #home-header-img .number .small {
     text-align: center;
     font: normal normal bold 18px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #ffffff;
-    text-shadow: 0px 3px 13px #0e5172;
 }
 #home-header-img .research-day {
     text-align: left;
@@ -477,7 +474,7 @@ body {
     display: flex;
     justify-content: space-between;
     width: 73.75%;
-    margin: 0 auto 5%;
+    margin: 5% auto 8%;
 }
 #recommend-threemerit-field .card {
     width: 46.17%;
@@ -490,13 +487,14 @@ body {
 }
 #recommend-threemerit-field .title {
     text-align: left;
-    font: normal normal bold 25px Noto Sans CJK JP;
+    font: normal normal bold 20px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
+    margin-bottom: 10px;
 }
 #recommend-threemerit-field .card-img {
     width: 100%;
-    margin-bottom: 38px;
+    margin-bottom: 20px;
 }
 #recommend-threemerit-field .card-img img {
     width: 100%;
@@ -506,13 +504,14 @@ body {
 }
 #recommend-threemerit-field .card-comment p {
     text-align: left;
-    font: normal normal normal 18px Noto Sans CJK JP;
+    font: normal normal normal 15px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #707070;
 }
+
 #four-features-field {
-    width: 84.27%;
-    margin: 0 auto 5%;
+    width: 95%;
+    margin: 0 auto 6%;
     position: relative;
 }
 #four-features-field .card-wrap {
@@ -531,11 +530,11 @@ body {
     color: #ffffff;
 }
 #four-features-field .card {
-    width: 24%;
+    width: 25%;
     background: #f5f5f5 0% 0% no-repeat padding-box;
     border-radius: 12px;
     margin-right: 1%;
-    padding: 2% 1%;
+    padding: 0 1%;
 }
 #four-features-field .number {
     background: #075c86 0% 0% no-repeat padding-box;
@@ -544,8 +543,8 @@ body {
     height: 50px;
     margin: 0 auto;
     position: absolute;
-    left: 8%;
-    top: -5%;
+    left: 10%;
+    top: 0;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -564,7 +563,7 @@ body {
 }
 #four-features-field .card-title {
     text-align: center;
-    font: normal normal bold 18px Noto Sans CJK JP;
+    font: normal normal bold 14px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
     width: 100%;
@@ -575,20 +574,23 @@ body {
     border-radius: 12px;
     text-align: center;
     margin: 0 auto 5%;
-    width: 95%;
     padding: 10% 0;
 }
 #four-features-field .card-img img {
     width: 70%;
 }
 #four-features-field .comment {
-    text-align: left;
-    font: normal normal normal 14px Noto Sans CJK JP;
+    font: normal normal normal 11px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #707070;
-    width: 90%;
     margin: 0 auto;
+    display: table;
 }
+
+#four-features-field .comment p {
+    text-align: left;
+}
+
 #learning-curriculum-example-field {
     background-image: url(../img/learning_example.png);
     margin-bottom: 5%;
@@ -622,8 +624,10 @@ body {
     padding: 4% 5%;
 }
 .learning-curriculum-example-wrap .card-field .card {
-    width: 45%;
+    width: 43%;
     margin: 0 auto;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 .learning-curriculum-example-wrap .card-field .bottom-border {
     padding-bottom: 5%;
@@ -631,25 +635,25 @@ body {
 .learning-curriculum-example-wrap .content-wrap {
     display: flex;
     justify-content: left;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
 }
 .content-wrap .number {
     text-align: center;
-    font: normal normal bold 35px Meiryo;
+    font: normal normal bold 28px Meiryo;
     letter-spacing: 0px;
     color: #075c86;
     margin-right: 5%;
 }
 .content-wrap .content-title {
     text-align: left;
-    font: normal normal bold 25px Noto Sans CJK JP;
+    font: normal normal bold 20px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
     padding-top: 2%;
 }
 .learning-curriculum-example-wrap .card-field .content p {
     text-align: left;
-    font: normal normal normal 25px Noto Sans CJK JP;
+    font: normal normal normal 18px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #707070;
 }
@@ -678,11 +682,12 @@ body {
     border-radius: 6px;
     padding: 5% 5%;
     margin-bottom: 5%;
-    width: 86.17%;
+    width: 90%;
+    display: table;
 }
 #free-counsel-steps .step-title {
     text-align: left;
-    font: normal normal bold 25px Noto Sans CJK JP;
+    font: normal normal bold 22px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
     padding-bottom: 3%;
@@ -691,7 +696,7 @@ body {
 }
 #free-counsel-steps .comment {
     text-align: left;
-    font: normal normal normal 25px Noto Sans CJK JP;
+    font: normal normal normal 19px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #707070;
 }
@@ -707,7 +712,7 @@ body {
 }
 #free-counsel-steps .points ul {
     text-align: left;
-    font: normal normal normal 25px noto Sans CJK JP;
+    font: normal normal normal 18px noto Sans CJK JP;
     letter-spacing: 0px;
     color: #707070;
     list-style-position: inside;
@@ -1644,6 +1649,58 @@ table tr td {
     #home-header-img .number .small {
         font: normal normal bold 12px Noto Sans CJK JP;
     }
+
+    #recommend-threemerit-field .number {
+        font: normal normal bold 24px Meiryo;
+    }
+    #recommend-threemerit-field .title {
+        font: normal normal bold 15px Noto Sans CJK JP;
+    }
+    #recommend-threemerit-field .card-comment p {
+        font: normal normal normal 12px Noto Sans CJK JP;
+    }
+    .title-font {
+        font: normal normal bold 19px Noto Sans CJK JP;
+    }
+
+    #four-features-field .number {
+        background: #075c86 0% 0% no-repeat padding-box;
+        width: 37px;
+        height: 37px;
+        left: 14%;
+        top: 0;
+    }
+    #four-features-field .number p {
+        font: normal normal bold 16px Meiryo;
+    }
+    #four-features-field .card-title {
+        font: normal normal bold 11px Noto Sans CJK JP;
+        margin-bottom: 5%;
+    }
+    #four-features-field .comment {
+        font: normal normal normal 10px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #707070;
+        margin: 0 auto;
+    }
+    .content-wrap .number {
+        font: normal normal bold 23px Meiryo;
+    }
+    .content-wrap .content-title {
+        font: normal normal bold 17px Noto Sans CJK JP;
+    }
+    .learning-curriculum-example-wrap .card-field .content p {
+        font: normal normal normal 13px Noto Sans CJK JP;
+    }
+    #free-counsel-steps .step-title {
+        font: normal normal bold 18px Noto Sans CJK JP;
+    }
+    #free-counsel-steps .comment {
+        font: normal normal normal 14px Noto Sans CJK JP;
+    }
+    #free-counsel-steps .points ul {
+        font: normal normal normal 14px noto Sans CJK JP;
+    }
 }
 @media screen and (min-width: 767px) {
     #responsive-home-header {
@@ -1761,9 +1818,6 @@ table tr td {
         font: normal normal bold 11px Noto Sans CJK JP;
         height: 50%;
     }
-    #home-header-img .number {
-        margin-bottom: 10%;
-    }
     #home-header-img .number .big {
         font: normal normal bold 24px Noto Sans CJK JP;
         white-space: nowrap;
@@ -1777,6 +1831,16 @@ table tr td {
         opacity: 0.55;
         white-space: nowrap;
     }
+
+    #recommend-threemerit-field .number {
+        font: normal normal bold 28px Meiryo;
+    }
+    #recommend-threemerit-field .title {
+        font: normal normal bold 18px Noto Sans CJK JP;
+    }
+    #recommend-threemerit-field .card-comment p {
+        font: normal normal normal 15px Noto Sans CJK JP;
+    }
     #recommend-threemerit-field {
         display: block;
         width: 100%;
@@ -1784,10 +1848,28 @@ table tr td {
     }
     #recommend-threemerit-field .card {
         width: 80%;
-        margin: 0 auto 5%;
+        margin: 35px auto 15%;
+    }
+    .title-font {
+        font: normal normal bold 27px Noto Sans CJK JP;
+    }
+    .pc-display {
+        display: none !important;
+    }
+    .sp-display {
+        display: table !important;
     }
     #four-features-field .title {
         background-color: #ffffff;
+        width: 60%;
+        padding: 0;
+        margin: 0 auto 3%;
+    }
+    #four-features-field .short-under-line {
+        display: block !important;
+        width: 10%;
+        margin: 0 auto 20%;
+        border-bottom: 3px solid #075c86;
     }
     #four-features-field .title p {
         color: #075c86;
@@ -1799,37 +1881,110 @@ table tr td {
     #four-features-field .card {
         width: 90%;
         margin: 0 auto 10%;
-        padding: 2%;
+        padding: 4%;
     }
     #four-features-field .number {
-        width: 100px;
-        height: 100px;
+        width: 50px;
+        height: 50px;
         position: absolute;
-        left: 7%;
-        top: -5%;
+        left: 5%;
+        top: -19;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         position: relative;
     }
+    #four-features-field .card-title {
+        font: normal normal bold 22px Noto Sans CJK JP;
+    }
+    #four-features-field .comment {
+        font: normal normal normal 18px Noto Sans CJK JP;
+    }
+
     .learning-curriculum-example-wrap .card-field {
         display: none;
+    }
+    .learning-curriculum-example .title {
+        text-align: center;
+        letter-spacing: 0px;
+        color: #ffffff;
+        padding-top: 10%;
+        padding-bottom: 2%;
+    }
+
+    .learning-curriculum-example .short-under-line {
+        border-bottom: 3px solid #ffffff;
+        width: 10%;
+        margin: 0 auto;
+        margin-bottom: 5%;
     }
     #responsive-card-field {
         width: 90%;
         margin: 0 auto;
     }
-    #responsive-card-field .bottom-border {
+    #responsive-card-field .card {
+        display: table;
         margin: 10% auto;
     }
+
+    .content-wrap .number {
+        font: normal normal bold 28px Meiryo;
+        margin-right: 5%;
+    }
+    .content-wrap .content-title {
+        font: normal normal bold 20px Noto Sans CJK JP;
+    }
     #responsive-card-field .content {
-        margin-bottom: 10%;
+        margin: 0 auto 10%;
+        display: table;
     }
     #responsive-card-field .content p {
         text-align: left;
-        font: normal normal normal 34px/49px Noto Sans CJK JP;
-        letter-spacing: 0px;
+        font: normal normal normal 16px Noto Sans CJK JP;
         color: #707070;
+    }
+    .free-counsel-steps-wrap {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #free-counsel-steps .short-under-line {
+        width: 10%;
+    }
+    #free-counsel-steps .step {
+        background: #f4f6f9 0% 0% no-repeat padding-box;
+        border: 1px solid #075c86;
+        border-radius: 6px;
+        padding: 5% 5%;
+        margin: 0 auto 5%;
+        display: table;
+        width: 90%;
+    }
+
+    #free-counsel-steps .step-title {
+        font: normal normal bold 19px Noto Sans CJK JP;
+        margin: 0 auto 5%;
+        text-align: center;
+    }
+
+    #free-counsel-steps .comment {
+        font: normal normal normal 15px Noto Sans CJK JP;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #free-counsel-steps .comment p {
+        text-align: left;
+    }
+    #free-counsel-steps .points {
+        padding: 1% 1%;
+        margin: 5% auto 0;
+        display: table;
+    }
+    #free-counsel-steps .points ul {
+        font: normal normal normal 15px noto Sans CJK JP;
+        display: inline-block;
+    }
+    #free-counsel-steps .points ul li {
+        white-space: nowrap;
     }
     #review-field .review-field-wrap {
         display: block;
@@ -1837,12 +1992,6 @@ table tr td {
     #review-field .review {
         width: 90%;
         margin: 0 auto 10%;
-    }
-    #free-counsel-steps .points ul {
-        text-align: left;
-        font: normal normal normal 16px/24px Noto Sans CJK JP;
-        letter-spacing: 0px;
-        color: #707070;
     }
     #questionnaire-field .questionnaire-field-wrap {
         display: block;
