@@ -1712,7 +1712,7 @@ table tr td {
 }
 
 /*レスポンシブ化　ブレイクポイント768px*/
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 430px) and (max-width: 767px) {
     .home-header {
         display: none;
     }
@@ -1967,12 +1967,13 @@ table tr td {
     }
 
     #free-counsel-steps .comment {
-        font: normal normal normal 15px Noto Sans CJK JP;
+        font: normal normal normal 16px Noto Sans CJK JP;
         margin: 0 auto;
         text-align: center;
     }
     #free-counsel-steps .comment p {
         text-align: left;
+        white-space: nowrap;
     }
     #free-counsel-steps .points {
         padding: 1% 1%;
@@ -1981,6 +1982,303 @@ table tr td {
     }
     #free-counsel-steps .points ul {
         font: normal normal normal 15px noto Sans CJK JP;
+        display: inline-block;
+    }
+    #free-counsel-steps .points ul li {
+        white-space: nowrap;
+    }
+    #review-field .review-field-wrap {
+        display: block;
+    }
+    #review-field .review {
+        width: 90%;
+        margin: 0 auto 10%;
+    }
+    #questionnaire-field .questionnaire-field-wrap {
+        display: block;
+    }
+
+    #questionnaire-field .questionnaire-card {
+        width: auto;
+        margin-bottom: 2%;
+    }
+    .process-counsel {
+        width: 80%;
+    }
+    .free-counsel-content-title p {
+        font-size: 35px;
+    }
+}
+@media screen and (max-width: 430px) {
+    .home-header {
+        display: none;
+    }
+    #HambergerMune {
+        display: none;
+    }
+    #responsive-home-header {
+        background: #ffffff 0% 0% no-repeat padding-box;
+        padding: 3% 2%;
+    }
+    .responsive-home-header-wrap {
+        display: flex;
+        position: relative;
+    }
+    .responsive-home-header-logo {
+        text-align: left;
+        font: normal normal bold 16px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #333333;
+        white-space: nowrap;
+        margin: 0 1%;
+    }
+    #responsive-home-hamburger {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        cursor: pointer;
+        z-index: 100;
+        top: -8;
+        right: 0;
+        transition: 0.4s;
+    }
+    #responsive-home-hamburger button {
+        border: none; /* 枠線を消す */
+        outline: none; /* クリックしたときに表示される枠線を消す */
+        background: transparent; /* 背景の灰色を消す */
+    }
+
+    #responsive-home-hamburger span {
+        position: absolute;
+        left: 2px;
+        display: block;
+        width: 35px;
+        height: 2px;
+        background-color: black;
+        transition: 0.8s;
+    }
+
+    #responsive-home-hamburger span:nth-of-type(1) {
+        top: 10px; /* ハンバーガーメニューの1本目の棒 */
+    }
+
+    #responsive-home-hamburger span:nth-of-type(2) {
+        top: 20px; /* ハンバーガーメニューの2本目の棒 */
+    }
+
+    #responsive-home-hamburger span:nth-of-type(3) {
+        top: 30px; /* ハンバーガーメニューの3本目の棒 */
+    }
+    #home-header-img {
+        background-image: url(../img/smallhomeheader.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        width: 100%;
+        height: 0;
+        padding-top: 116.14%;
+    }
+    #home-header-img .home-header-coments {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        padding-right: 30px;
+        width: 80%;
+    }
+    #home-header-img .home-header-performance {
+        margin-top: 15%;
+        width: 100%;
+    }
+    #home-header-img .home-header-title {
+        font: normal normal bold 24px Noto Sans CJK JP;
+        margin-bottom: 10%;
+        text-align: left;
+        white-space: nowrap;
+    }
+    #home-header-img .home-header-coments .comment {
+        font: normal normal bold 10px Noto Sans CJK JP;
+        white-space: nowrap;
+    }
+    #home-header-img .home-header-comments-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: table;
+        margin: 0 auto;
+    }
+
+    #home-header-img .home-header-performance-card-title {
+        text-align: center;
+        font: normal normal bold 10px Noto Sans CJK JP;
+        height: 50%;
+    }
+    #home-header-img .number .big {
+        font: normal normal bold 24px Noto Sans CJK JP;
+        white-space: nowrap;
+    }
+    #home-header-img .number .small {
+        font: normal normal bold 12px Noto Sans CJK JP;
+        white-space: nowrap;
+    }
+    #home-header-img .research-day p {
+        font: normal normal 100 12px Noto Sans CJK JP;
+        opacity: 0.55;
+        white-space: nowrap;
+    }
+
+    #recommend-threemerit-field .number {
+        font: normal normal bold 24px Meiryo;
+    }
+    #recommend-threemerit-field .title {
+        font: normal normal bold 14px Noto Sans CJK JP;
+    }
+    #recommend-threemerit-field .card-comment p {
+        font: normal normal normal 14px Noto Sans CJK JP;
+    }
+    #recommend-threemerit-field {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+    }
+    #recommend-threemerit-field .card {
+        width: 80%;
+        margin: 35px auto 15%;
+    }
+    .title-font {
+        font: normal normal bold 20px Noto Sans CJK JP;
+    }
+    .pc-display {
+        display: none !important;
+    }
+    .sp-display {
+        display: table !important;
+    }
+    #four-features-field .title {
+        background-color: #ffffff;
+        width: 60%;
+        padding: 0;
+        margin: 0 auto 3%;
+    }
+    #four-features-field .short-under-line {
+        display: block !important;
+        width: 10%;
+        margin: 0 auto 20%;
+        border-bottom: 3px solid #075c86;
+    }
+    #four-features-field .title p {
+        color: #075c86;
+    }
+    #four-features-field .card-wrap {
+        display: block;
+        justify-content: none;
+    }
+    #four-features-field .card {
+        width: 90%;
+        margin: 0 auto 15%;
+        padding: 4%;
+    }
+    #four-features-field .number {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        left: 5%;
+        top: -19;
+        transform: translate(-50%, -50%);
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        position: relative;
+    }
+    #four-features-field .card-title {
+        font: normal normal bold 22px Noto Sans CJK JP;
+    }
+    #four-features-field .comment {
+        font: normal normal normal 13px Noto Sans CJK JP;
+    }
+
+    .learning-curriculum-example-wrap .card-field {
+        display: none;
+    }
+    .learning-curriculum-example .title {
+        text-align: center;
+        letter-spacing: 0px;
+        color: #ffffff;
+        padding-top: 10%;
+        padding-bottom: 2%;
+    }
+
+    .learning-curriculum-example .short-under-line {
+        border-bottom: 3px solid #ffffff;
+        width: 10%;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+    #responsive-card-field {
+        width: 90%;
+        margin: 0 auto;
+    }
+    #responsive-card-field .card {
+        display: table;
+        margin: 10% auto;
+    }
+
+    .content-wrap .number {
+        font: normal normal bold 28px Meiryo;
+        margin-right: 5%;
+    }
+    .content-wrap .content-title {
+        font: normal normal bold 20px Noto Sans CJK JP;
+    }
+    #responsive-card-field .content {
+        margin: 0 auto 10%;
+        display: table;
+    }
+    #responsive-card-field .content p {
+        text-align: left;
+        font: normal normal normal 13px Noto Sans CJK JP;
+        color: #707070;
+    }
+    .free-counsel-steps-wrap {
+        width: 95%;
+        margin: 0 auto;
+    }
+    #free-counsel-steps .short-under-line {
+        width: 10%;
+    }
+    #free-counsel-steps .step {
+        background: #f4f6f9 0% 0% no-repeat padding-box;
+        border: 1px solid #075c86;
+        border-radius: 6px;
+        padding: 5% 5%;
+        margin: 0 auto 5%;
+        display: table;
+        width: 90%;
+    }
+
+    #free-counsel-steps .step-title {
+        font: normal normal bold 16px Noto Sans CJK JP;
+        margin: 0 auto 5%;
+        text-align: center;
+    }
+
+    #free-counsel-steps .comment {
+        font: normal normal normal 12px Noto Sans CJK JP;
+        margin: 0 auto;
+        text-align: center;
+    }
+    #free-counsel-steps .comment p {
+        text-align: left;
+        white-space: nowrap;
+    }
+    #free-counsel-steps .points {
+        padding: 1% 1%;
+        margin: 5% auto 0;
+        display: table;
+    }
+    #free-counsel-steps .points ul {
+        font: normal normal normal 11px noto Sans CJK JP;
         display: inline-block;
     }
     #free-counsel-steps .points ul li {
