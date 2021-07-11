@@ -1716,7 +1716,7 @@ table tr td {
 }
 
 /*レスポンシブ化　ブレイクポイント768px*/
-@media screen and (min-width: 400px) and (max-width: 767px) {
+@media screen and (min-width: 420px) and (max-width: 767px) {
     .home-header {
         display: none;
     }
@@ -1788,12 +1788,11 @@ table tr td {
     #home-header-img .home-header-coments {
         position: absolute;
         top: 50%;
-        left: 55%;
+        left: 50%;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        padding-right: 30px;
-        width: 80%;
+        width: auto;
     }
     #home-header-img .home-header-performance {
         margin-top: 15%;
@@ -2026,7 +2025,7 @@ table tr td {
         font: normal normal bold 21px Meiryo;
     }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     .home-header {
         display: none;
     }
@@ -2102,8 +2101,7 @@ table tr td {
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
-        padding-right: 30px;
-        width: 80%;
+        width: auto;
     }
     #home-header-img .home-header-performance {
         margin-top: 15%;
