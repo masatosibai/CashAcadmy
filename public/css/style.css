@@ -896,7 +896,7 @@ body {
 }
 #questionnaire-field .questionnaire-card-title p {
     text-align: center;
-    font: normal normal bold 15px Noto Sans CJK JP;
+    font: normal normal bold 20px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
     margin-bottom: 5%;
@@ -1923,14 +1923,14 @@ table tr td {
         width: 100%;
     }
     #home-header-img .home-header-title {
-        font: normal normal bold 30px Noto Sans CJK JP;
+        font: normal normal bold 33px Noto Sans CJK JP;
         margin-bottom: 10%;
         text-align: left;
         white-space: nowrap;
         padding-left: 3%;
     }
     #home-header-img .home-header-coments .comment {
-        font: normal normal bold 11px Noto Sans CJK JP;
+        font: normal normal bold 14px Noto Sans CJK JP;
         white-space: nowrap;
     }
     #home-header-img .home-header-comments-wrap {
@@ -1946,7 +1946,7 @@ table tr td {
 
     #home-header-img .home-header-performance-card-title {
         text-align: center;
-        font: normal normal bold 11px Noto Sans CJK JP;
+        font: normal normal bold 15px Noto Sans CJK JP;
         height: 50%;
     }
     #home-header-img .number .big {
@@ -2718,7 +2718,7 @@ table tr td {
     }
     #question-field .question-answer .answer {
         text-align: left;
-        font: normal normal normal 10px Noto Sans CJK JP;
+        font: normal normal normal 11px Noto Sans CJK JP;
         letter-spacing: 0px;
         color: #707070;
         margin-top: 1%;

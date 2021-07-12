@@ -806,9 +806,11 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
         <p class="answer pc-display">
             CashAcademyを受けた方の多くはお金の勉強については初心者です。初めて勉強する方でも理解できるようになっております</p><p class="answer pc-display">のでご安心ください。
         </p>
-        <p class="answer sp-display" style="display: none;">
-            CashAcademyを受けた方の多くはお金の勉強に</p><p class="answer sp-display" style="display: none;">ついては初心者です。初めて勉強する方でも理</p><p class="answer sp-display" style="display: none;">解できるようになっておりますのでご安心くだ</p><p class="answer sp-display" style="display: none;">さい。
+        <div class="answer sp-display" style="display: none;">
+        <p>
+            CashAcademyを受けた方の多くはお金の勉強に</p><p>ついては初心者です。初めて勉強する方でも理</p><p>解できるようになっておりますのでご安心くだ</p><p>さい。
         </p>
+        </div>
     </div>
 
     <div class="question-answer">
@@ -830,9 +832,11 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
             CashAcademyでは特定の金融機関からお金を頂いて紹介するようなことは一切しておりません。</p><p class="answer pc-display">
             お客様がお金の教養を身につけられることを第一優先としています。
         </p>
-        <p class="answer sp-display" style="display: none;">
-            CashAcademyでは特定の金融機関からお金を頂</p><p class="answer sp-display" style="display: none;">いて紹介するようなことは一切しておりませ</p><p class="answer sp-display" style="display: none;">ん。</p><p class="answer sp-display" style="display: none;">お客様がお金の教養を身につけられることを第</p><p class="answer sp-display" style="display: none;">一優先としています。
+        <div class="answer sp-display" style="display: none;">
+        <p>
+            CashAcademyでは特定の金融機関からお金を頂</p><p>いて紹介するようなことは一切しておりませ</p><p>ん。</p><p>お客様がお金の教養を身につけられることを第</p><p>一優先としています。
         </p>
+        </div>
     </div>
 
     <div class="question-answer">
@@ -852,9 +856,11 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
             ①現状分析、②資産形成のポイント説明、③CashAcademyの紹介をします。</p><p class="answer pc-display">
             マンツーマンで、かつお客様に現状分析を元にお話しするので、多くのお客様に「受けてよかった」という声をいただいて</p><p class="answer pc-display">おります。
         </p>
-        <p class="answer sp-display" style="display: none;">
-            ①現状分析、②資産形成のポイント説明、</p><p class="answer sp-display" style="display: none;">③CashAcademyの紹介をします。</p><p class="answer sp-display" style="display: none;">マンツーマンで、かつお客様に現状分析を元に</p><p class="answer sp-display" style="display: none;">にお話しするので、多くのお客様に「受けてよ</p><p class="answer sp-display" style="display: none;">かった」という声をいただいております。
+        <div class="answer sp-display" style="display: none;">
+        <p>
+            ①現状分析、②資産形成のポイント説明、</p><p >③CashAcademyの紹介をします。</p><p >マンツーマンで、かつお客様に現状分析を元に</p><p>にお話しするので、多くのお客様に「受けてよ</p><p>かった」という声をいただいております。
         </p>
+        </div>
     </div>
 
     <div class="question-answer">
@@ -873,8 +879,10 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
         <p class="answer pc-display">
             はい、無料です。ただし、無料カウンセリングはお1人様1回限りまでの受講とります。
         </p>
-        <p class="answer sp-display" style="display: none;">
-            はい、無料です。ただし、無料カウンセリング</p><p class="answer sp-display" style="display: none;">はお1人様1回限りまでの受講とります。</p>
+        <div class="answer sp-display" style="display: none;">
+        <p>
+            はい、無料です。ただし、無料カウンセリング</p><p>はお1人様1回限りまでの受講とります。</p>
+        </div>
     </div>
 
     <div class="question-answer">
@@ -893,9 +901,11 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
         <p class="answer pc-display">
             可能です。オンライン（zoom）で行うため、ネット環境と静かな場所があればどこでも受けることが可能です。
         </p>
-        <p class="answer sp-display" style="display: none;">
-            可能です。オンライン（zoom）で行うため、</p><p class="answer sp-display" style="display: none;">ネット環境と静かな場所があればどこでも受け<p class="answer sp-display" style="display: none;">ることが可能です。
+        <div class="answer sp-display" style="display: none;">
+        <p >
+            可能です。オンライン（zoom）で行うため、</p><p>ネット環境と静かな場所があればどこでも受け<p>ることが可能です。
         </p>
+        </div>
     </div>
     </div>
  </div>
