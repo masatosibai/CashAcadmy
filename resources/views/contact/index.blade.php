@@ -1,14 +1,13 @@
 @extends('layouts.layout') @section('content')
 <div id="contact">
     <div class="contactwrap">
-        <div>
+        <div class="input-field">
             <div id="researvationDay">
-                <h1>
-                    予約日
+                <p>
                     {{ Session::get("year") }}年 {{ Session::get("month") }}月
                     {{ Session::get("day") }}日
-                    {{ Session::get("time") }}時～{{Session::get("time")+1}}時
-                </h1>
+                    {{ Session::get("time") }}:00～{{Session::get("time")+1}}:00
+                </p>
             </div>
             <form
                 method="POST"
@@ -82,8 +81,12 @@
                 </div>
                 <div class="telnumber-input-field">
                     <label>電話番号</label>
-                    <input name="telNumber" value="{{ old("telNumber") }}""
-                    type="text"> @if ($errors->has('telNumber'))
+                    <input
+                        name="telNumber"
+                        value="{{ old('telNumber') }}"
+                        type="text"
+                    />
+                    @if ($errors->has('telNumber'))
                     <p class="error-message">
                         {{ $errors->first('telNumber') }}
                     </p>
@@ -94,12 +97,20 @@
                 </div>
                 <div class="privacy-policy">
                     <p>
-                        利用規約・プライバシーポリシーをお読みの上、同意して送信して下さい。<br />
-                        ※無料カウンセリングは、オンライン(zoom）のマンツーマンで行います。<br />
-                        ※所要時間は約1時間です<br />。
+                        利用規約・プライバシーポリシーをお読みの上、同意して送信して下さい。
+
+                        <br />
+
+                        ※無料カウンセリングは、オンライン(zoom）のマンツーマンで行います。
+
+                        <br />
+                        ※所要時間は約1時間です
+                        <br />
                         ※無理な勧誘は一切しません。
+                        <br />
                     </p>
                 </div>
+
                 <div class="comfirm-button">
                     <button type="submit">
                         <p>入力内容確認</p>

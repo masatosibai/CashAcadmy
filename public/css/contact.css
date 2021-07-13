@@ -1,0 +1,173 @@
+/* 予約情報入力確認画面 */
+#contact {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    height: 100%;
+}
+.contactwrap {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    width: 80%;
+}
+.contactwrap .input-field {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    width: 80%;
+}
+.contactwrap .error-message {
+    text-align: left;
+    font: normal normal bold 16px/18px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: red;
+}
+
+#researvationDay {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #3faf46;
+    border-radius: 3px;
+    white-space: nowrap;
+    width: 50%;
+    margin: 5% auto 35px;
+}
+#researvationDay p {
+    text-align: center;
+    font: normal normal bold 19px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #3faf46;
+}
+
+.form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#contact label {
+    font: normal normal bold 16px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+    display: inline-block;
+    width: 25%;
+    padding-top: 1%;
+}
+#nameBox-input {
+    display: flex;
+    justify-content: start;
+    padding-left: 15%;
+    margin-bottom: 10px;
+}
+#nameBox-input input {
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 25%;
+    height: 30px;
+    margin-right: 2%;
+    margin-left: 3%;
+}
+.email-input-field,
+.telnumber-input-field {
+    display: flex;
+    justify-content: start;
+    padding-left: 15%;
+    margin-bottom: 10px;
+}
+.email-input-field input,
+.telnumber-input-field input {
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    box-sizing: border-box;
+    width: 55%;
+    height: 30px;
+    margin-left: 3%;
+}
+.nameExample {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+    padding-left: 39%;
+}
+.firstName,
+.secondName {
+    font: normal normal bold 14px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #949494;
+}
+.nameExample .firstName {
+    margin-right: 30%;
+}
+.email-Example {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+    padding-left: 39%;
+}
+.email-Example p {
+    font: normal normal bold 14px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #949494;
+    margin-right: 32%;
+}
+.telnumber-Example {
+    display: flex;
+    justify-content: start;
+    margin-bottom: 20px;
+    padding-left: 39%;
+}
+.telnumber-Example p {
+    font: normal normal bold 14px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #949494;
+    margin-right: 27%;
+}
+.privacy-policy {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #707070;
+    border-radius: 6px;
+    padding: 2%;
+    width: 75%;
+    margin: 0 auto 35px;
+    text-align: center;
+}
+.privacy-policy p {
+    text-align: left;
+    display: inline-block;
+    margin-bottom: 10px;
+    font: normal normal normal 14px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #414141;
+}
+
+.comfirm-button {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2%;
+}
+.comfirm-button button {
+    background: #3faf46 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    width: 20%;
+    border: none;
+    cursor: pointer;
+}
+.comfirm-button button p {
+    text-align: center;
+    font: normal normal bold 17px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+}
+.back-home {
+    text-align: center;
+    font: normal normal bold 15px Noto Sans CJK JP;
+    margin-bottom: 2%;
+}
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+}
