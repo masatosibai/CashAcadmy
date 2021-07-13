@@ -131,7 +131,7 @@
     </div>
     <div class="short-under-line" style="display: none"></div>
     <div class="card-wrap">
-        <div class="card">
+        <div class="card margin-r">
             <div class="number">
                 <p>1</p>
             </div>
@@ -159,7 +159,7 @@
                 </p>
             </div>
         </div>
-        <div class="card">
+        <div class="card margin-r">
             <div class="number">
                 <p>2</p>
             </div>
@@ -182,7 +182,7 @@
                 </p>
             </div>            
         </div>
-        <div class="card">
+        <div class="card margin-r">
             <div class="number">
                 <p>3</p>
             </div>
@@ -501,9 +501,10 @@
 background-image : url({{ $microCMS[2]['img']['url'] }})"
 >
     <div class="title title-font">
-        <p>{{ $microCMS[2]["title"] }}</p>
+        <p class="pc-display">{{ $microCMS[2]["title"] }}</p>
+        <p class="sp-display" style="display: none;">無料カウンセリングの<br>流れ</p>
     </div>
-    <div class="short-under-line"></div>
+    <div class="short-under-line pc-display"></div>
     <div class="comment">
         <p>{{ $microCMS[2]["discription"] }}</p>
     </div>

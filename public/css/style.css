@@ -392,6 +392,9 @@ body {
 .padding-l {
     padding-left: 3%;
 }
+.margin-r {
+    margin-right: 1%;
+}
 
 /* 予約情報選択画面*/
 #home-header-img {
@@ -513,7 +516,6 @@ body {
 #four-features-field {
     width: 95%;
     margin: 0 auto 6%;
-    position: relative;
 }
 #four-features-field .card-wrap {
     display: flex;
@@ -534,8 +536,8 @@ body {
     width: 25%;
     background: #f5f5f5 0% 0% no-repeat padding-box;
     border-radius: 12px;
-    margin-right: 1%;
     padding: 0 1%;
+    position: relative;
 }
 #four-features-field .number {
     background: #075c86 0% 0% no-repeat padding-box;
@@ -564,7 +566,7 @@ body {
 }
 #four-features-field .card-title {
     text-align: center;
-    font: normal normal bold 14px Noto Sans CJK JP;
+    font: normal normal bold 16px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
     width: 100%;
@@ -581,7 +583,7 @@ body {
     width: 70%;
 }
 #four-features-field .comment {
-    font: normal normal normal 11px Noto Sans CJK JP;
+    font: normal normal normal 14px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #707070;
     margin: 0 auto;
@@ -630,12 +632,12 @@ body {
     padding-right: 2%;
 }
 .learning-curriculum-example-wrap .card-field .bottom-border {
-    padding-bottom: 5%;
+    padding-bottom: 2%;
 }
 .learning-curriculum-example-wrap .content-wrap {
     display: flex;
     justify-content: left;
-    margin-bottom: 7%;
+    margin-bottom: 5%;
 }
 .content-wrap .number {
     text-align: center;
@@ -722,6 +724,7 @@ body {
     padding: 5% 5%;
     margin-top: 10%;
     margin-bottom: 5%;
+    text-align: center;
 }
 #free-counsel-process .title p {
     text-align: center;
@@ -746,7 +749,7 @@ body {
 }
 #mainTable {
     border: 4px solid #075c86;
-    width: 82.81%;
+    width: 80%;
     margin: 0 auto 10%;
 }
 #mainTable table {
@@ -789,6 +792,7 @@ body {
     width: 100%;
     text-align: center;
     cursor: pointer;
+    margin-left: 1px;
 }
 #changeWeek .today {
     text-align: center;
@@ -1839,6 +1843,49 @@ table tr td {
         display: none !important;
     }
 }
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    #home-header-img .home-header-title {
+        font: normal normal bold 35px Noto Sans CJK JP;
+        margin-bottom: 10%;
+        text-align: left;
+        white-space: nowrap;
+        padding-left: 3%;
+    }
+    #home-header-img .home-header-coments .comment {
+        font: normal normal bold 14px Noto Sans CJK JP;
+        white-space: nowrap;
+    }
+    #home-header-img .home-header-comments-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: table;
+        margin: 0 auto;
+    }
+    #home-header-img .home-header-performance-wrap {
+        padding-left: 5%;
+    }
+
+    #home-header-img .home-header-performance-card-title {
+        text-align: center;
+        font: normal normal bold 15px Noto Sans CJK JP;
+        height: 50%;
+    }
+    #home-header-img .number .big {
+        font: normal normal bold 24px Noto Sans CJK JP;
+        white-space: nowrap;
+    }
+    #home-header-img .number .small {
+        font: normal normal bold 12px Noto Sans CJK JP;
+        white-space: nowrap;
+    }
+    #home-header-img .research-day p {
+        font: normal normal 100 15px Noto Sans CJK JP;
+        opacity: 0.55;
+        white-space: nowrap;
+        padding-left: 5%;
+    }
+}
 
 /*レスポンシブ化　ブレイクポイント768px*/
 @media screen and (min-width: 420px) and (max-width: 767px) {
@@ -1850,7 +1897,7 @@ table tr td {
     }
     #responsive-home-header {
         background: #ffffff 0% 0% no-repeat padding-box;
-        padding: 3% 2%;
+        padding: 4% 2%;
     }
     .responsive-home-header-wrap {
         display: flex;
@@ -1885,7 +1932,8 @@ table tr td {
         left: 2px;
         display: block;
         width: 35px;
-        height: 2px;
+        height: 3px;
+        border-radius: 10px;
         background-color: black;
         transition: 0.8s;
     }
@@ -1969,7 +2017,7 @@ table tr td {
         font: normal normal bold 28px Meiryo;
     }
     #recommend-threemerit-field .title {
-        font: normal normal bold 18px Noto Sans CJK JP;
+        font: normal normal bold 21px Noto Sans CJK JP;
     }
     #recommend-threemerit-field .card-comment p {
         font: normal normal normal 15px Noto Sans CJK JP;
@@ -1980,11 +2028,12 @@ table tr td {
         margin: 0 auto;
     }
     #recommend-threemerit-field .card {
-        width: 80%;
+        width: 95%;
         margin: 35px auto 15%;
     }
     .title-font {
         font: normal normal bold 27px Noto Sans CJK JP;
+        margin-top: 10%;
     }
     .pc-display {
         display: none !important;
@@ -2013,12 +2062,12 @@ table tr td {
     }
     #four-features-field .card {
         width: 90%;
-        margin: 0 auto 10%;
+        margin: 0 auto 20%;
         padding: 4%;
     }
     #four-features-field .number {
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         position: absolute;
         left: 5%;
         top: -22;
@@ -2088,7 +2137,7 @@ table tr td {
         border: 1px solid #075c86;
         border-radius: 6px;
         padding: 5% 5%;
-        margin: 0 auto 5%;
+        margin: 0 auto 2%;
         display: table;
         width: 90%;
     }
@@ -2145,13 +2194,19 @@ table tr td {
     .free-counsel-content-title p {
         font-size: 35px;
     }
-    #free-counsel-process .short-under-line {
-        width: 10%;
+    #free-counsel-process .title p {
+        text-align: center;
+        letter-spacing: 0px;
+        color: #ffffff;
+        margin: 0 auto 10%;
     }
     #free-counsel-process .comment {
         font: normal normal normal 12px Noto Sans CJK JP;
         padding: 5% 5%;
+        width: 92%;
+        margin: 0 auto;
     }
+
     #changeWeek .today {
         font: normal normal bold 22px Meiryo;
     }
@@ -2165,7 +2220,7 @@ table tr td {
     }
     #mainTable table {
         width: 100%;
-        height: 80%;
+        height: 60%;
         table-layout: fixed;
     }
     #review-field .short-under-line {
@@ -2260,23 +2315,25 @@ table tr td {
     }
     #question-field .question-answer .question-mark {
         text-align: center;
-        font: normal normal bold 45px Noto Sans CJK JP;
+        font: normal normal bold 50px Noto Sans CJK JP;
         letter-spacing: 0px;
         color: #075c86;
         margin-right: 4%;
     }
     #question-field .question-answer .question {
         text-align: left;
-        font: normal normal bold 13px Noto Sans CJK JP;
+        font: normal normal bold 17px Noto Sans CJK JP;
         letter-spacing: 0px;
         color: #333333;
+        white-space: nowrap;
     }
     #question-field .question-answer .answer {
         text-align: left;
-        font: normal normal normal 13px Noto Sans CJK JP;
+        font: normal normal normal 16px Noto Sans CJK JP;
         letter-spacing: 0px;
         color: #707070;
         margin-top: 1%;
+        white-space: nowrap;
     }
 }
 @media screen and (max-width: 420px) {
@@ -2407,7 +2464,7 @@ table tr td {
         font: normal normal bold 24px Meiryo;
     }
     #recommend-threemerit-field .title {
-        font: normal normal bold 14px Noto Sans CJK JP;
+        font: normal normal bold 16px Noto Sans CJK JP;
     }
     #recommend-threemerit-field .card-comment p {
         font: normal normal normal 14px Noto Sans CJK JP;
@@ -2418,12 +2475,13 @@ table tr td {
         margin: 0 auto;
     }
     #recommend-threemerit-field .card {
-        width: 80%;
+        width: 95%;
         margin: 35px auto 15%;
     }
     .title-font {
         font: normal normal bold 20px Noto Sans CJK JP;
         margin-bottom: 3% !important;
+        margin-top: 10% !important;
     }
     .pc-display {
         display: none !important;
@@ -2452,7 +2510,7 @@ table tr td {
     }
     #four-features-field .card {
         width: 90%;
-        margin: 0 auto 15%;
+        margin: 0 auto 20%;
         padding: 4%;
     }
     #four-features-field .number {
@@ -2460,14 +2518,14 @@ table tr td {
         height: 50px;
         position: absolute;
         left: 5%;
-        top: -19;
+        top: -15;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
         position: relative;
     }
     #four-features-field .card-title {
-        font: normal normal bold 22px Noto Sans CJK JP;
+        font: normal normal bold 18px Noto Sans CJK JP;
     }
     #four-features-field .comment {
         font: normal normal normal 13px Noto Sans CJK JP;
@@ -2530,7 +2588,7 @@ table tr td {
         border: 1px solid #075c86;
         border-radius: 6px;
         padding: 5% 5%;
-        margin: 0 auto 5%;
+        margin: 0 auto 2%;
         display: table;
         width: 90%;
     }
@@ -2587,12 +2645,17 @@ table tr td {
     .free-counsel-content-title p {
         font-size: 35px;
     }
-    #free-counsel-process .short-under-line {
-        width: 10%;
+    #free-counsel-process .title p {
+        text-align: center;
+        letter-spacing: 0px;
+        color: #ffffff;
+        margin: 0 auto 10%;
     }
     #free-counsel-process .comment {
         font: normal normal normal 12px Noto Sans CJK JP;
         padding: 5% 5%;
+        width: 92%;
+        margin: 0 auto;
     }
     #changeWeek .today {
         font: normal normal bold 15px Meiryo;
@@ -2607,7 +2670,7 @@ table tr td {
     }
     #mainTable table {
         width: 100%;
-        height: 80%;
+        height: 60%;
         table-layout: fixed;
     }
     #review-field {
@@ -2706,22 +2769,69 @@ table tr td {
     }
     #question-field .question-answer .question-mark {
         text-align: center;
-        font: normal normal bold 35px Noto Sans CJK JP;
+        font: normal normal bold 30px Noto Sans CJK JP;
         letter-spacing: 0px;
         color: #075c86;
         margin-right: 4%;
+        padding-top: 5%;
     }
     #question-field .question-answer .question {
         text-align: left;
-        font: normal normal bold 10px Noto Sans CJK JP;
+        font: normal normal bold 13px Noto Sans CJK JP;
         letter-spacing: 0px;
         color: #333333;
+        white-space: nowrap;
     }
     #question-field .question-answer .answer {
         text-align: left;
-        font: normal normal normal 11px Noto Sans CJK JP;
+        font: normal normal normal 12px Noto Sans CJK JP;
         letter-spacing: 0px;
         color: #707070;
         margin-top: 1%;
+        white-space: nowrap;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    #home-header-img .home-header-title {
+        font: normal normal bold 45px Noto Sans CJK JP;
+        margin-bottom: 10%;
+        text-align: left;
+        white-space: nowrap;
+        padding-left: 3%;
+    }
+    #home-header-img .home-header-coments .comment {
+        font: normal normal bold 18px Noto Sans CJK JP;
+        white-space: nowrap;
+    }
+    #home-header-img .home-header-comments-wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        display: table;
+        margin: 0 auto;
+    }
+    #home-header-img .home-header-performance-wrap {
+        padding-left: 5%;
+    }
+
+    #home-header-img .home-header-performance-card-title {
+        text-align: center;
+        font: normal normal bold 19px Noto Sans CJK JP;
+        height: 50%;
+    }
+    #home-header-img .number .big {
+        font: normal normal bold 36px Noto Sans CJK JP;
+        white-space: nowrap;
+    }
+    #home-header-img .number .small {
+        font: normal normal bold 18px Noto Sans CJK JP;
+        white-space: nowrap;
+    }
+    #home-header-img .research-day p {
+        font: normal normal 100 15px Noto Sans CJK JP;
+        opacity: 0.55;
+        white-space: nowrap;
+        padding-left: 5%;
     }
 }
