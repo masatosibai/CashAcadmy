@@ -19,7 +19,7 @@
                 @endif
             </div>
             <div class="login-button-field">
-                <button type="submit" name="login">ログイン</button>
+                <button type="submit" name="login"><p>ログイン</p></button>
             </div>
         </form>
     </div>

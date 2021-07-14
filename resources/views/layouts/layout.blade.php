@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="{{ asset('css/contact.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/comfirm.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/thanks.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
     </head>
     <body>
         @yield('content')
