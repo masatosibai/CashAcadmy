@@ -24,10 +24,20 @@
             <img src="/img/line_icon.png" alt="line追加" />
         </div>
         <div class="line-field-message">
-            <p>
-                LINEにて無料カウンセリングの日程調整をします。<br />
+            <div class="pc-display">
+            <p >
+                LINEにて無料カウンセリングの日程調整をします。</p><p>
                 上の「友だち追加」ボタンからLINEを追加したあと、LINEにお名前をお送りください。
             </p>
+            </div>
+            <div class="sp-display" style="display: none;">
+            <p >
+                LINEにて無料カウンセリングの日程調整をします。</p>
+                <p>
+                上の「友だち追加」ボタンからLINEを追加したあと、</p>
+                <p>LINEにお名前をお送りください。
+            </p>
+            </div>
         </div>
     </div>
 
@@ -41,7 +51,7 @@
         </div>
         <div class="free-counsel-content bottom-border">
             <div class="item"><p>料金</p></div>
-            <div class="content"><p>無料 ※1人につき1回までの受講</p></div>
+            <div class="content"><p>無料 </br>※1人につき1回までの受講</p></div>
         </div>
         <div class="free-counsel-content">
             <div class="item"><p>内容</p></div>
