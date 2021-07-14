@@ -44,28 +44,26 @@
                     value="{{ $inputs['telNumber'] }}"
                     type="hidden"
                 />
-                <div class="confirmlabel bottom-border">
-                    <label class="itemname">予約日</label>
+                <div class="confirmlabel bottom-border" style="margin-top: 10%">
+                    <label class="item-name">予約日</label>
                     <label
-                        >{{ $inputs["year"] }}年 {{ $inputs["month"] }}月
-                        {{ $inputs["day"] }}日 {{ $inputs["time"] }}時～{{
-                            $inputs["time"] + 1
-                        }}時</label
+                        >{{ $inputs["year"] }}/ {{ $inputs["month"] }}/
+                        {{ $inputs["day"] }}</label
                     >
                 </div>
                 <div class="confirmlabel bottom-border">
-                    <label class="itemname">お名前</label>
+                    <label class="item-name">お名前</label>
                     <label
                         >{{ $inputs["familyName"] }}
                         {{ $inputs["firstName"] }}</label
                     >
                 </div>
                 <div class="confirmlabel bottom-border">
-                    <label class="itemname">メールアドレス</label>
+                    <label class="item-name">メールアドレス</label>
                     <label>{{ $inputs["email"] }}</label>
                 </div>
                 <div class="confirmlabel">
-                    <label class="itemname">電話番号</label>
+                    <label class="item-name">電話番号</label>
                     <label> {{ $inputs["telNumber"] }}</label>
                 </div>
                 <div class="submit-button">
