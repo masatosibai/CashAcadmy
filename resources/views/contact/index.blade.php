@@ -77,7 +77,7 @@
                     @endif
                 </div>
                 <div class="email-Example">
-                    <p>ex ) sample@sample.com</p>
+                    <p>ex)sample@sample.com</p>
                 </div>
                 <div class="telnumber-input-field">
                     <label>電話番号</label>
@@ -93,7 +93,7 @@
                     @endif
                 </div>
                 <div class="telnumber-Example">
-                    <p>ex ) 00011112222<br />※ハイフンなしで入力してください</p>
+                    <p>ex)00011112222<br />※ハイフンなしで入力してください</p>
                 </div>
                 <div class="privacy-policy">
                     <p>

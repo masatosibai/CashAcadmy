@@ -21,7 +21,7 @@
 }
 .contactwrap .error-message {
     text-align: left;
-    font: normal normal bold 16px/18px Noto Sans CJK JP;
+    font: normal normal bold 13px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: red;
 }
@@ -31,8 +31,8 @@
     border: 1px solid #3faf46;
     border-radius: 3px;
     white-space: nowrap;
-    width: 50%;
-    margin: 5% auto 35px;
+    margin: 5% auto 4%;
+    display: table;
 }
 #researvationDay p {
     text-align: center;
@@ -58,7 +58,7 @@
     display: flex;
     justify-content: start;
     padding-left: 15%;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 #nameBox-input input {
     background: #f4f6f9 0% 0% no-repeat padding-box;
@@ -75,7 +75,7 @@
     display: flex;
     justify-content: start;
     padding-left: 15%;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
 }
 .email-input-field input,
 .telnumber-input-field input {
@@ -90,7 +90,7 @@
 .nameExample {
     display: flex;
     justify-content: start;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     padding-left: 39%;
 }
 .firstName,
@@ -105,7 +105,7 @@
 .email-Example {
     display: flex;
     justify-content: start;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     padding-left: 39%;
 }
 .email-Example p {
@@ -117,7 +117,7 @@
 .telnumber-Example {
     display: flex;
     justify-content: start;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     padding-left: 39%;
 }
 .telnumber-Example p {
@@ -132,13 +132,12 @@
     border-radius: 6px;
     padding: 2%;
     width: 75%;
-    margin: 0 auto 35px;
+    margin: 0 auto 3%;
     text-align: center;
 }
 .privacy-policy p {
     text-align: left;
     display: inline-block;
-    margin-bottom: 10px;
     font: normal normal normal 14px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #414141;
@@ -147,14 +146,16 @@
 .comfirm-button {
     text-align: center;
     color: #fff;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 .comfirm-button button {
     background: #3faf46 0% 0% no-repeat padding-box;
     border-radius: 3px;
-    width: 20%;
     border: none;
     cursor: pointer;
+    display: table;
+    white-space: nowrap;
+    margin: 0 auto;
 }
 .comfirm-button button p {
     text-align: center;
@@ -168,6 +169,78 @@
     margin-bottom: 2%;
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {
+    #researvationDay p {
+        font: normal normal bold 15px Noto Sans CJK JP;
+    }
+
+    #contact label {
+        font: normal normal bold 14px Noto Sans CJK JP;
+    }
+    .firstName,
+    .secondName {
+        font: normal normal bold 13px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #949494;
+    }
+    .email-Example p {
+        font: normal normal bold 13px Noto Sans CJK JP;
+    }
+    .telnumber-Example p {
+        font: normal normal bold 13px Noto Sans CJK JP;
+    }
+    .privacy-policy p {
+        font: normal normal normal 10px Noto Sans CJK JP;
+    }
+
+    .comfirm-button button p {
+        font: normal normal bold 14px Noto Sans CJK JP;
+    }
+    .back-home {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
 }
-@media screen and (min-width: 600px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
+    .contactwrap .input-field {
+        width: 98%;
+    }
+    #contact label {
+        font: normal normal bold 10px Noto Sans CJK JP;
+        width: 35%;
+    }
+    #researvationDay p {
+        font: normal normal bold 10px Noto Sans CJK JP;
+    }
+
+    #contact label {
+        font: normal normal bold 10px Noto Sans CJK JP;
+    }
+    .nameExample,
+    .email-Example,
+    .telnumber-Example {
+        padding-left: 47%;
+    }
+    .nameExample .firstName {
+        margin-right: 22%;
+    }
+    .firstName,
+    .secondName {
+        font: normal normal bold 10px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #949494;
+    }
+    .email-Example p {
+        font: normal normal bold 10px Noto Sans CJK JP;
+    }
+    .telnumber-Example p {
+        font: normal normal bold 10px Noto Sans CJK JP;
+    }
+    .privacy-policy p {
+        font: normal normal normal 10px Noto Sans CJK JP;
+    }
+    .comfirm-button button p {
+        font: normal normal bold 10px Noto Sans CJK JP;
+    }
+    .back-home {
+        font: normal normal bold 10px Noto Sans CJK JP;
+    }
 }
