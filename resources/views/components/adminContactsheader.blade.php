@@ -6,14 +6,14 @@
                 <form method="post" action="{{ route('admin.users') }}">
                     @csrf
                     <button type="submit" name="login">
-                        システム管理者一覧
+                        <p>システム管理者管理画面</p>
                     </button>
                 </form>
             </div>
             <div class="logout">
                 <form method="POST" action="/admin/logout">
                     @csrf
-                    <button type="submit">ログアウト</button>
+                    <button type="submit"><p>ログアウト</p></button>
                 </form>
             </div>
         </div>

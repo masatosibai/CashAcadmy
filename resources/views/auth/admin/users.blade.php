@@ -115,7 +115,7 @@
                         </p>
                         @endif
                     </td>
-                    <td><label>パスワード</label></td>
+                    <td><label class="pasword-label">パスワード</label></td>
                     <td class="new-admin-password-field">
                         <input
                             name="new_password"

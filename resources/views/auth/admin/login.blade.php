@@ -4,12 +4,14 @@
     <div class="admin-login-wrap">
         <form method="POST" action="/admin/login">
             @csrf
-            <div class="login-email-field">
-                <label>メールアドレス</label>
-                <input name="email" value="" type="text" />
+            <div style="text-align: center; margin-bottom: 2%">
                 @if ($errors->has('email'))
                 <p class="error-message">{{ $errors->first('email') }}</p>
                 @endif
+            </div>
+            <div class="login-email-field">
+                <label>メールアドレス</label>
+                <input name="email" value="" type="text" />
             </div>
             <div class="login-password-field">
                 <label>パスワード</label>

@@ -8,6 +8,8 @@
         <link rel="stylesheet" href="{{ asset('css/comfirm.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/thanks.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/login.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/adminContact.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/adminUser.css') }}" />
     </head>
     <body>
         @yield('content')

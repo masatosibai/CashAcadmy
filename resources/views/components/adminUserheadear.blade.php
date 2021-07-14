@@ -5,13 +5,15 @@
             <div class="users-contacts-change">
                 <form method="post" action="{{ route('admin.contacts') }}">
                     @csrf
-                    <button type="submit" name="login">予約情報一覧</button>
+                    <button type="submit" name="login">
+                        <p>コンタクト一覧画面</p>
+                    </button>
                 </form>
             </div>
             <div class="logout">
                 <form method="POST" action="/admin/logout">
                     @csrf
-                    <button type="submit">ログアウト</button>
+                    <button type="submit"><p>ログアウト</p></button>
                 </form>
             </div>
         </div>

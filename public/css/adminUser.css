@@ -1,0 +1,213 @@
+/* システム管理者ユーザ一覧画面 */
+#users-table {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+}
+.users-wrap {
+    width: 95%;
+    height: 75%;
+}
+.users-wrap table {
+    width: 100%;
+    text-align: center;
+    font: normal normal bold 20px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #000000;
+    table-layout: fixed;
+}
+.users-wrap table td,
+.users-wrap table th {
+    text-align: center;
+    vertical-align: middle;
+    height: 70px;
+    margin-bottom: 3%;
+    word-break: break-all;
+}
+.users-wrap .error-message {
+    text-align: center;
+    font: normal normal bold 16px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: red;
+}
+.users-title-width {
+    width: 30%;
+}
+
+.name-field input {
+    text-align: center;
+    border: none;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    font: normal normal bold 20px Noto Sans CJK JP;
+    width: 45%;
+}
+.email-field input {
+    text-align: center;
+    border: none;
+    background: #f4f6f9 0% 0% no-repeat padding-box;
+    font: normal normal bold 20px Noto Sans CJK JP;
+    width: 100%;
+}
+.new-admin-name-field input {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    width: 30%;
+}
+.new-admin-email-field input {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    width: 60%;
+}
+.new-admin-password-field input {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #075c86;
+    border-radius: 3px;
+    width: 80%;
+}
+.users-delete-button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #ef2843;
+    border-radius: 3px;
+    font: normal normal bold 18px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ef2843;
+    width: 95%;
+    cursor: pointer;
+}
+.users-update-button {
+    background: #ffffff 0% 0% no-repeat padding-box;
+    border: 1px solid #3faf46;
+    border-radius: 3px;
+    font: normal normal bold 18px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #3faf46;
+    width: 95%;
+    cursor: pointer;
+}
+.users-new-create {
+    background: #3faf46 0% 0% no-repeat padding-box;
+    border-radius: 3px;
+    font: normal normal bold 20px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #ffffff;
+    width: 95%;
+    cursor: pointer;
+    border: none;
+}
+#users-table .pasword-label {
+    font-size: 19px;
+}
+#users-table input {
+    size: 20px;
+}
+@media screen and (min-width: 580px) and (max-width: 767px) {
+    .users-wrap table {
+        font: normal normal bold 14px Noto Sans CJK JP;
+    }
+    .users-wrap .error-message {
+        font: normal normal bold 14px Noto Sans CJK JP;
+    }
+    .name-field input {
+        font: normal normal bold 14px Noto Sans CJK JP;
+    }
+    .email-field input {
+        font: normal normal bold 14px Noto Sans CJK JP;
+    }
+    .users-delete-button {
+        font: normal normal bold 14px Noto Sans CJK JP;
+    }
+    .users-update-button {
+        font: normal normal bold 14px Noto Sans CJK JP;
+    }
+    .users-new-create {
+        font: normal normal bold 14px Noto Sans CJK JP;
+    }
+    #users-table .pasword-label {
+        font-size: 14px;
+    }
+    #users-table input {
+        size: 20px;
+    }
+    /* ペジネーション */
+    .pagenation {
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 580px) {
+    .users-wrap table {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
+    .users-wrap .error-message {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
+    .name-field input {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
+    .email-field input {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
+    .users-delete-button {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
+    .users-update-button {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
+    .users-new-create {
+        font: normal normal bold 12px Noto Sans CJK JP;
+    }
+    #users-table .pasword-label {
+        font-size: 12px;
+    }
+    #users-table input {
+        size: 20px;
+    }
+    /* ペジネーション */
+    .pagenation {
+        text-align: center;
+        width: 40%;
+        margin: 0 auto;
+    }
+    .navigation-filed {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 5%;
+    }
+    .pagenation a {
+        text-decoration: none;
+        font: normal normal bold 11px Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #333333;
+    }
+    .pagenation .selected-page-field {
+        display: inline;
+        width: 30px;
+        height: 30px;
+        background: #075c86 0% 0% no-repeat padding-box;
+        border-radius: 50%;
+    }
+    .pagenation .selected-page {
+        font: normal normal bold 11x Noto Sans CJK JP;
+        letter-spacing: 0px;
+        color: #ffffff;
+    }
+    .pagenation .triangle-left {
+        display: inline-block;
+        border-style: solid;
+        border-width: 9px 18px 9px 0;
+        border-color: transparent #000 transparent transparent;
+    }
+    .pagenation .triangle-right {
+        display: inline-block;
+        border-style: solid;
+        border-width: 9px 0 9px 18px;
+        border-color: transparent transparent transparent #000;
+    }
+}
