@@ -48,7 +48,9 @@
     color: #ffffff;
     white-space: nowrap;
 }
-.process-counsel-title {
+.process-counsel-title,
+.process-counsel,
+.free-cousel-message {
     margin-left: 11%;
 }
 .process-counsel-title p {
@@ -64,7 +66,6 @@
     display: table;
     background: #075c86 0% 0% no-repeat padding-box;
     border-radius: 5px;
-    margin-left: 11%;
     margin-bottom: 2%;
     padding: 1% 2%;
 }
@@ -74,9 +75,6 @@
     letter-spacing: 0px;
     color: #ffffff;
     white-space: nowrap;
-}
-.free-cousel-message {
-    margin-left: 11%;
 }
 .free-cousel-message p {
     text-align: left;
@@ -166,6 +164,11 @@
     color: #075c86;
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {
+    .process-counsel-title,
+    .process-counsel,
+    .free-cousel-message {
+        margin-left: 8%;
+    }
     .process-counsel-title p {
         font: normal normal bold 23px Noto Sans CJK JP;
     }
@@ -177,14 +180,14 @@
         white-space: nowrap;
     }
     .free-cousel-message p {
-        font: normal normal bold 17px Noto Sans CJK JP;
+        font: normal normal bold 16px Noto Sans CJK JP;
     }
     .line-field-message p {
         font: normal normal normal 17px Noto Sans CJK JP;
     }
     .free-counsel-content p {
         text-align: left;
-        font: normal normal bold 16px Noto Sans CJK JP;
+        font: normal normal bold 1px Noto Sans CJK JP;
         letter-spacing: 0px;
         color: #075c86;
     }
@@ -199,7 +202,7 @@
     .process-counsel-title,
     .process-counsel,
     .free-cousel-message {
-        margin-left: 8%;
+        margin-left: 9%;
     }
     .process-counsel-title p {
         font: normal normal bold 13px Noto Sans CJK JP;
