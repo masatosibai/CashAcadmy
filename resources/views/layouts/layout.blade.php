@@ -14,5 +14,6 @@
     <body>
         @yield('content')
         <script src="{{ asset('js/modal.js') }}"></script>
+        <script src="{{ asset('js/calendarChange.js') }}"></script>
     </body>
 </html>

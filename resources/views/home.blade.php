@@ -510,35 +510,24 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
     </div>
 </div>
 
-<div id="changeWeek">
+<div id="changeWeek" class="thisWeekCalendar">
     <div class="changeWeeek-button-field">
-        @if($week==1 )
-        <form method="post" action="{{ route('home.index') }}">
-            @csrf
-            <button type="submit" name="nextWeek" value="">今週</button>
-        </form>
-        @endif
     </div>
     <div class="today">
-        <p>{{ $year }}年{{ $month }}月</p>
+        <p>{{ $thisWeekYear }}年{{ $thisWeekMonth }}月</p>
     </div>
-    <div class="changeWeeek-button-field">
-        @if($week ==0)
-        <form method="post" action="{{ route('home.index') }}">
-            @csrf
+    <div id="next-week" class="changeWeeek-button-field">
             <button type="submit" name="nextWeek" value="true">来週</button>
-        </form>
-        @endif
     </div>
 </div>
-<div id="mainTable">
+<div id="mainTable" class="thisWeekCalendar">
     <table>
         <tr>
-            @foreach($days as $v)
+            @foreach($thisWeekDays as $v)
             <th>{{ $v }}</th>
             @endforeach
         </tr>
-        @foreach($startday as $key=>$a)
+        @foreach($thisWeek as $key=>$a)
         <tr>
             <td>{{ $key }}</td>
             @foreach($a as $key=>$b)
@@ -576,6 +565,62 @@ background-image : url({{ $microCMS[2]['img']['url'] }})"
         @endforeach
     </table>
 </div>
+<div id="changeWeek" class="nextWeekCalendar" style="display: none;">
+    <div id="this-week" class="changeWeeek-button-field">
+            <button type="submit" name="nextWeek" value="">今週</button>
+    </div>
+    <div class="today">
+        <p>{{ $thisWeekYear }}年{{ $thisWeekMonth }}月</p>
+    </div>
+    <div class="changeWeeek-button-field">
+    </div>
+</div>
+<div id="mainTable" class="nextWeekCalendar" style="display: none;">
+    <table>
+        <tr>
+            @foreach($nextWeekDays as $v)
+            <th>{{ $v }}</th>
+            @endforeach
+        </tr>
+        @foreach($nextWeek as $key=>$a)
+        <tr>
+            <td>{{ $key }}</td>
+            @foreach($a as $key=>$b)
+            <td>
+                <form method="POST" action="{{ route('contact.index') }}">
+                    @csrf @foreach($b as $key=> $c) @if($key == "year")
+                    <input name="year" value="{{ $c }}" type="hidden" />
+                    <!-- <p>{{ $c }}</p> -->
+                    @endif @if($key == "month")
+                    <input name="month" value="{{ $c }}" type="hidden" />
+                    <!-- <p>{{ $c }}</p> -->
+                    @endif @if($key == "day")
+                    <input name="day" value="{{ $c }}" type="hidden" />
+                    <!-- <p>{{$c}}</p> -->
+                    @endif @if($key == "hour")
+                    <input name="time" value="{{ $c }}" type="hidden" />
+                    @endif @if($key == "is_resevation") @if($c ==0)
+                    <button
+                        class="select_day_hour_button"
+                        type="submit"
+                        name="action"
+                        value="selected_day_hour"
+                        style="color: red"
+                    >
+                        〇
+                    </button>
+                    @else
+                    <p style="color: blue">×</p>
+                    <p>@endif @endif @endforeach</p>
+                </form>
+
+                @endforeach
+            </td>
+        </tr>
+        @endforeach
+    </table>
+</div>
+
 
 <div id="review-field">
     <div class="top-title title-font">

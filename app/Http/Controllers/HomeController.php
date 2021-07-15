@@ -33,47 +33,57 @@ class HomeController extends Controller
         // セッションを終了
         curl_close($ch);
 
+        $thisWeekDays = array();
+        $thisWeekDays[0] = "日時";
+        $thisWeekYear = array();
+        $thisWeekMonth = array();
+        $thisWeekIndex = array();
+
+        $nextWeekDays = array();
+        $nextWeekDays[0] = "日時";
+        $nextWeekYear = array();
+        $nextWeekMonth = array();
+        $nextWeekIndex = array();
 
         $now = Carbon::now('Asia/Tokyo');
-        $days = array();
-        $days[0] = "日時";
-        $year = array();
-        $month = array();
-        $index = array();
-
-        $week = 0;
-        if ($request->get('nextWeek') == "true") {
-            $now->addDays(7);
-            $week = 1;
-        }
-
-        for ($j = 1; $j <= 7; $j++) {
+        for ($j = 1; $j <= 14; $j++) {
             $now->addDays(1);
-            $days[$j] = $now->day;
-            $month[$j] = $now->month;
-            $year[$j] = $now->year;
-            $index[$now->day] = $j;
-        }
-
-        $reservation = array();
-        for ($i = 10; $i < 21; $i++) {
-            for ($j = 1; $j <= 7; $j++) {
-                $reservation[$i][$j] = ["year" => $year[$j], "month" => $month[$j], "day" => $days[$j], "hour" => $i, "is_resevation" => 0];
+            if ($j <= 7) {
+                $thisWeekDays[$j] = $now->day;
+                $thisWeekMonth[$j] = $now->month;
+                $thisWeekYear[$j] = $now->year;
+                $thisWeekIndex[$now->day] = $j;
+            } else {
+                $nextWeekDays[$j] = $now->day;
+                $nextWeekMonth[$j] = $now->month;
+                $nextWeekYear[$j] = $now->year;
+                $nextWeekIndex[$now->day] = $j;
             }
         }
 
+        $thisWeek = array();
+        $nextWeek = array();
+        for ($i = 10; $i < 21; $i++) {
+            for ($j = 1; $j <= 14; $j++) {
+                if ($j <= 7) {
+                    $thisWeek[$i][$j] = ["year" => $thisWeekYear[$j], "month" => $thisWeekMonth[$j], "day" => $thisWeekDays[$j], "hour" => $i, "is_resevation" => 0];
+                }
+                if ($j >= 8) {
+                    $nextWeek[$i][$j] = ["year" => $nextWeekYear[$j], "month" => $nextWeekMonth[$j], "day" => $nextWeekDays[$j], "hour" => $i, "is_resevation" => 0];
+                }
+            }
+        }
         // 開始日時
-        $start_dt = new Carbon($year[1] . '-' . $month[1] . '-' . $days[1]);
+        $start_dt = new Carbon($thisWeekYear[1] . '-' . $thisWeekMonth[1] . '-' . $thisWeekDays[1]);
         //終了日時
-        $end_dt = new Carbon($year[7] . '-' . $month[7] . '-' . $days[7]);
+        $end_dt = new Carbon($thisWeekYear[7] . '-' . $thisWeekMonth[7] . '-' . $thisWeekDays[7]);
 
         $start_dt->setTime(-9, 00, 00);
         $end_dt->setTime(14, 59, 59);
-        $events = Event::get($start_dt, $end_dt);
-        // dd($events);
+        $thisWeekEvents = Event::get($start_dt, $end_dt);
 
-        if ($events->count()) {
-            foreach ($events as $event) {
+        if ($thisWeekEvents->count()) {
+            foreach ($thisWeekEvents as $event) {
                 $start_day_time = $event->startDateTime;
                 // dump($start_day_time->day);
                 $day = $start_day_time->day;
@@ -91,11 +101,44 @@ class HomeController extends Controller
                 // dump($endTimeHour);
                 for ($i = $startTimeHour; $i <= $endTimeHour; $i++) {
                     if ($i >= 10 && $i <= 20) {
-                        $reservation[$i][$index[$day]]["is_resevation"] = 1;
+                        $thisWeek[$i][$thisWeekIndex[$day]]["is_resevation"] = 1;
                     }
                 }
             }
         }
-        return view("home", ["startday" => $reservation, "microCMS" => $result["contents"], "days" => $days, "week" => $week, "year" => $year[1], "month" => $month[1]]);
+
+        // 開始日時
+        $start_dt = new Carbon($nextWeekYear[8] . '-' . $nextWeekMonth[8] . '-' . $nextWeekDays[8]);
+        //終了日時
+        $end_dt = new Carbon($nextWeekYear[14] . '-' . $nextWeekMonth[14] . '-' . $nextWeekDays[14]);
+
+        $start_dt->setTime(-9, 00, 00);
+        $end_dt->setTime(14, 59, 59);
+        $nextWeekEvents = Event::get($start_dt, $end_dt);
+        if ($nextWeekEvents->count()) {
+            foreach ($nextWeekEvents as $event) {
+                $start_day_time = $event->startDateTime;
+                // dump($start_day_time->day);
+                $day = $start_day_time->day;
+                $startTimeHour = $start_day_time->hour;
+                // dump($startTimeHour);
+                $end_day_time = $event->endDateTime;
+                $endTimeHour = $end_day_time->hour;
+                $endTimeMinute = $end_day_time->minute;
+                $endTimeSecond = $end_day_time->second;
+                // dump($endTime);
+                if ($endTimeMinute == 0 && $endTimeSecond == 0) {
+                    $endTimeHour -= 1;
+                }
+                // dump($startTimeHour);
+                // dump($endTimeHour);
+                for ($i = $startTimeHour; $i <= $endTimeHour; $i++) {
+                    if ($i >= 10 && $i <= 20) {
+                        $nextWeek[$i][$nextWeekIndex[$day]]["is_resevation"] = 1;
+                    }
+                }
+            }
+        }
+        return view("home", ["thisWeek" => $thisWeek,   "thisWeekDays" => $thisWeekDays, "thisWeekYear" => $thisWeekYear[1], "thisWeekMonth" => $thisWeekMonth[1],"nextWeek" => $nextWeek,"nextWeekDays" => $nextWeekDays, "nextWeekYear" => $nextWeekYear[8], "nextWeekMonth" => $nextWeekMonth[8], "microCMS" => $result["contents"]]);
     }
 }
