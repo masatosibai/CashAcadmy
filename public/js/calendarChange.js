@@ -10,7 +10,7 @@ thisWeekBtn.addEventListener('click', function() {
   nextWeekCalendarListArray[0].style.display = "none"
   nextWeekCalendarListArray[1].style.display = "none"
   thisWeekCalendarListArray[0].style.display = "flex"
-  thisWeekCalendarListArray[1].style.display = "flex"
+  thisWeekCalendarListArray[1].style.display = "block"
   
   
 }, false);
@@ -18,7 +18,7 @@ thisWeekBtn.addEventListener('click', function() {
 nextWeekBtn.addEventListener('click', function() {
   
   nextWeekCalendarListArray[0].style.display = "flex"
-  nextWeekCalendarListArray[1].style.display = "flex"
+  nextWeekCalendarListArray[1].style.display = "block"
   thisWeekCalendarListArray[0].style.display = "none"
   thisWeekCalendarListArray[1].style.display = "none"
 

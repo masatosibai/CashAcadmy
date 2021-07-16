@@ -48,6 +48,7 @@
 #contact input {
     size: 16px;
     font-size: 16px;
+    padding: 1px 1px;
 }
 #contact label {
     font: normal normal bold 16px Noto Sans CJK JP;
