@@ -848,20 +848,20 @@ body {
     width: 80%;
     margin: 0 auto;
 }
-#review-field .name,
-#review-field .before-after {
+#review-field .name p,
+#review-field .before-after p {
     text-align: left;
     font: normal normal bold 17px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
 }
-#review-field .age-profession {
+#review-field .age-profession p {
     text-align: left;
     font: normal normal bold 17px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #333333;
 }
-#review-field .message {
+#review-field .message p {
     text-align: left;
     font: normal normal normal 15px Noto Sans CJK JP;
     letter-spacing: 0px;
@@ -974,7 +974,7 @@ body {
     border-bottom: 3px solid #075c86;
     margin-bottom: 3%;
 }
-#question-field .question-answer {
+#question-field .question-answer p{
     width: 85%;
     margin: 0 auto 3%;
     text-align: left;
@@ -992,7 +992,13 @@ body {
     letter-spacing: 0px;
     color: #333333;
 }
-#question-field .question-answer .answer {
+#question-field .question-answer .question p {
+    text-align: left;
+    font: normal normal bold 20px Noto Sans CJK JP;
+    letter-spacing: 0px;
+    color: #333333;
+}
+#question-field .question-answer .answer p {
     text-align: left;
     font: normal normal normal 14px Noto Sans CJK JP;
     letter-spacing: 0px;
@@ -1000,7 +1006,6 @@ body {
     margin-top: 1%;
     white-space: nowrap;
 }
-
 
 /* ペジネーション */
 .pagenation {
