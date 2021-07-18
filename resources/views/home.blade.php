@@ -29,29 +29,35 @@
         </ul>
     </nav>
 </div>
-<div id="home-header-img">
+<div id="home-header-img"  class="pc-display" style="background-image: url({{
+        $home_header[0]['pc-image']['url']
+    }})">
     <div class="home-header-coments">
         <div class="home-header-comments-wrap">
-            <p class="home-header-title">
-                短期間で<br />お金の教養を身につける
-            </p>
-            <div class="comment">
-                <P>Cash Acdemyは投資初心者・未経験者の人が</P>
+            <div class="home-header-title">
+                <!-- 短期間で<br />お金の教養を身につける -->
+                {!! $home_header[0]["title"] !!}
             </div>
             <div class="comment">
-                <P>お金の「増やし方、貯め方、使い方」を学べるスクールです。</P>
+                <!-- <P>Cash Acdemyは投資初心者・未経験者の人が</P> -->
+                {!! $home_header[0]["up-comment"] !!}
+            </div>
+            <div class="comment">
+                <!-- <P>お金の「増やし方、貯め方、使い方」を学べるスクールです。</P> -->
+                 {!! $home_header[0]["down-comment"] !!}
             </div>
 
             <div class="home-header-performance">
                 <div class="home-header-performance-wrap">
                     <div class="home-header-performance-card boder-r padding-r">
                         <div class="home-header-performance-card-title">
-                            <p>受講満足度</p>
+                            <!-- <p>受講満足度</p> -->
+                             {!! $home_header[0]["performance-title1"] !!}
                         </div>
                         <div class="number">
                             <p>
-                                <span class="big">4.6</span
-                                ><span class="small">/ 5.0</span>
+                                <span class="big">{{ $home_header[0]["bignumber1"]}}</span
+                                ><span class="small">{{ $home_header[0]["smallnumber1"]}}</span>
                             </p>
                         </div>
                         <div class="boder-r"></div>
@@ -64,31 +70,105 @@
                         "
                     >
                         <div class="home-header-performance-card-title">
-                            <p>20代・30代・40代<br />の割合</p>
+                            <!-- <p>20代・30代・40代<br />の割合</p> -->
+                            {!! $home_header[0]["performance-title2"] !!}
                         </div>
                         <div class="number">
                             <p>
-                                <span class="big">90</span
-                                ><span class="small">％</span>
+                                <span class="big">{{ $home_header[0]["bignumber2"]}}</span
+                                ><span class="small">{{ $home_header[0]["smallnumber2"]}}</span>
                             </p>
                         </div>
                     </div>
 
                     <div class="home-header-performance-card padding-l">
                         <div class="home-header-performance-card-title">
-                            <p>投資未経験者<br />初心者の割合</p>
+                            <!-- <p>投資未経験者<br />初心者の割合</p> -->
+                               {!! $home_header[0]["performance-title3"] !!}
                         </div>
                         <div class="number">
                             <p>
-                                <span class="big">90</span
-                                ><span class="small">％</span>
+                                <span class="big">{{ $home_header[0]["bignumber3"]}}</span
+                                ><span class="small">{{ $home_header[0]["smallnumber3"]}}</span>
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="research-day">
-                <p>※2021年4月時点での自社調べ</p>
+                <p>{!! $home_header[0]["researchday"]!!}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="home-header-img"  class="sp-display" style="display: none; background-image: url({{
+        $home_header[0]['sp-image']['url']
+    }})">
+    <div class="home-header-coments">
+        <div class="home-header-comments-wrap">
+            <div class="home-header-title">
+                <!-- 短期間で<br />お金の教養を身につける -->
+                {!! $home_header[0]["title"] !!}
+            </div>
+            <div class="comment">
+                <!-- <P>Cash Acdemyは投資初心者・未経験者の人が</P> -->
+                {!! $home_header[0]["up-comment"] !!}
+            </div>
+            <div class="comment">
+                <!-- <P>お金の「増やし方、貯め方、使い方」を学べるスクールです。</P> -->
+                 {!! $home_header[0]["down-comment"] !!}
+            </div>
+
+            <div class="home-header-performance">
+                <div class="home-header-performance-wrap">
+                    <div class="home-header-performance-card boder-r padding-r">
+                        <div class="home-header-performance-card-title">
+                            <!-- <p>受講満足度</p> -->
+                             {!! $home_header[0]["performance-title1"] !!}
+                        </div>
+                        <div class="number">
+                            <p>
+                                <span class="big">{{ $home_header[0]["bignumber1"]}}</span
+                                ><span class="small">{{ $home_header[0]["smallnumber1"]}}</span>
+                            </p>
+                        </div>
+                        <div class="boder-r"></div>
+                    </div>
+                    <div
+                        class="
+                            home-header-performance-card
+                            boder-r
+                            padding-center
+                        "
+                    >
+                        <div class="home-header-performance-card-title">
+                            <!-- <p>20代・30代・40代<br />の割合</p> -->
+                            {!! $home_header[0]["performance-title2"] !!}
+                        </div>
+                        <div class="number">
+                            <p>
+                                <span class="big">{{ $home_header[0]["bignumber2"]}}</span
+                                ><span class="small">{{ $home_header[0]["smallnumber2"]}}</span>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="home-header-performance-card padding-l">
+                        <div class="home-header-performance-card-title">
+                            <!-- <p>投資未経験者<br />初心者の割合</p> -->
+                               {!! $home_header[0]["performance-title3"] !!}
+                        </div>
+                        <div class="number">
+                            <p>
+                                <span class="big">{{ $home_header[0]["bignumber3"]}}</span
+                                ><span class="small">{{ $home_header[0]["smallnumber3"]}}</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="research-day">
+                <p>{!! $home_header[0]["researchday"]!!}</p>
             </div>
         </div>
     </div>
@@ -725,17 +805,17 @@
             <div class="comment sp-display" style="display: none">
                 <p class="before-after">受講前</p>
                 <br />
-                <p class="message">
+                <div class="message">
                     <!-- 以前の私は「貯金は今のままでも足りるのか」「知らない間に損をしているとがあるかもしれない」といったお金への不安を抱えて居ました。 -->
                     {!!$review_field[1]["bc-class-discription"]!!}
-                </p>
+                </div>
                 <br />
                 <p class="before-after">受講後</p>
                 <br />
-                <p class="message">
+                <div class="message">
                     <!-- 貯金は「なぜ、どのぐらい必要なのか」を知ることができました。また、自分が気付いていなかった大きな支出や国がやっている優遇制度を知ることができました。漠然とした不安が消えただけでなく、自信を持てるようになりました。 -->
                      {!!$review_field[1]["af-class-discription"]!!}
-                </p>
+                </div>
                 <br />
             </div>
             <div class="comment pc-display">
@@ -745,18 +825,18 @@
                 <br />
                 <p class="before-after">受講前</p>
                 <br />
-                <p class="message">
+                <div class="message">
                     <!-- 以前の私は「貯金は今のままでも足りるのか」「知らない間に損をしているとがあるかもしれない」といったお金への不安を抱えて居ました。 -->
                     {!!$review_field[1]["bc-class-discription"]!!}
-                </p>
+                </div>
                 </p>
                 <br />
                 <p class="before-after">受講後</p>
                 <br />
-                <p class="message">
+                <div class="message">
                     <!-- 貯金は「なぜ、どのぐらい必要なのか」を知ることができました。また、自分が気付いていなかった大きな支出や国がやっている優遇制度を知ることができました。漠然とした不安が消えただけでなく、自信を持てるようになりました。 -->
                     {!!$review_field[1]["af-class-discription"]!!}
-                </p>
+                </div>
                 </p>
                 <br />
             </div>
@@ -933,16 +1013,16 @@
                 <p class="pc-display">
                     <span class="question-mark">Q</span
                     ><span class="question"
-                        >投資や金融の知識がゼロですが大丈夫でしょうか？ </span
+                        > {!!$question_field[2]["pc-title"]!!} </span
                     >
                 </p>
                 <div class="sp-display questions-field" style="display: none">
                     <p class="question-mark">Q</p>
                     <div style="padding-top: 8%">
                         <p class="question">
-                            投資や金融などの知識がゼロですが大丈
+                            {!!$question_field[2]["sp-title"]!!}
                         </p>
-                        <p class="question">夫でしょうか？</p>
+                        <!-- <p class="question">夫でしょうか？</p> -->
                     </div>
                 </div>
                 <div class="answer pc-display">
@@ -963,15 +1043,16 @@
                 <p class="pc-display">
                     <span class="question-mark">Q</span
                     ><span class="question"
-                        >保険や投資商品等を売り込まれたりしませんか？</span
+                        >{!!$question_field[3]["pc-title"]!!}</span
                     >
                 </p>
                 <div class="sp-display questions-field" style="display: none">
                     <p class="question-mark">Q</p>
                     <div style="padding-top: 8%">
-                        <p class="question">保険や投資商品等を</p>
+                        <!-- <p class="question">保険や投資商品等を</p>
                         <p></p>
-                        <p class="question">売り込まれたりしませんか？</p>
+                        <p class="question">売り込まれたりしませんか？</p> -->
+                        {!!$question_field[3]["sp-title"]!!}
                     </div>
                 </div>
                 <div class="answer pc-display">
@@ -996,15 +1077,16 @@
                 <p class="pc-display">
                     <span class="question-mark">Q</span
                     ><span class="question"
-                        >カウンセリングでは何をしますか？</span
+                        >{!!$question_field[4]["pc-title"]!!}</span
                     >
                 </p>
                 <div class="sp-display questions-field" style="display: none">
                     <p class="question-mark">Q</p>
                     <div style="padding-top: 8%">
-                        <p class="question">カウンセリングでは</p>
+                        <!-- <p class="question">カウンセリングでは</p>
                         <p></p>
-                        <p class="question">何をしますか？</p>
+                        <p class="question">何をしますか？</p> -->
+                        {!!$question_field[4]["sp-title"]!!}
                     </div>
                 </div>
                 <div class="answer pc-display">
@@ -1016,7 +1098,6 @@
                 </p> -->
                 {!!$question_field[4]["pc-discription"]!!}
                 </div>
-                <p class="answer pc-display">おります。</p>
                 <div class="answer sp-display" style="display: none">
                     <!-- <p>①現状分析、②資産形成のポイント説明、</p>
                     <p>③CashAcademyの紹介をします。</p>
@@ -1030,14 +1111,15 @@
             <div class="question-answer">
                 <p class="pc-display">
                     <span class="question-mark">Q</span
-                    ><span class="question">カウンセリングは無料ですか？</span>
+                    ><span class="question">{!!$question_field[5]["pc-title"]!!}</span>
                 </p>
                 <div class="sp-display questions-field" style="display: none">
                     <p class="question-mark">Q</p>
                     <div style="padding-top: 8%">
-                        <p class="question">カウンセリングは</p>
+                        <!-- <p class="question">カウンセリングは</p>
                         <p></p>
-                        <p class="question">無料ですか？</p>
+                        <p class="question">無料ですか？</p> -->
+                        {!!$question_field[5]["sp-title"]!!}
                     </div>
                 </div>
                 <div class="answer pc-display">
@@ -1055,15 +1137,16 @@
                 <p class="pc-display">
                     <span class="question-mark">Q</span
                     ><span class="question"
-                        >地方にいるのですが受講可能ですか？</span
+                        >{!!$question_field[6]["pc-title"]!!}</span
                     >
                 </p>
                 <div class="sp-display questions-field" style="display: none">
                     <p class="question-mark">Q</p>
                     <div style="padding-top: 8%">
-                        <p class="question">地方にいるのですが</p>
+                        <!-- <p class="question">地方にいるのですが</p>
                         <p></p>
-                        <p class="question">受講可能ですか？</p>
+                        <p class="question">受講可能ですか？</p> -->
+                        {!!$question_field[6]["sp-title"]!!}
                     </div>
                 </div>
                 <div class="answer pc-display">

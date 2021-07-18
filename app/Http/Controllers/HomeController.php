@@ -19,6 +19,7 @@ class HomeController extends Controller
             'https://cashacademy.microcms.io/api/v1/review-field',
             'https://cashacademy.microcms.io/api/v1/questionnaire-field',
             'https://cashacademy.microcms.io/api/v1/question-field',
+            'https://cashacademy.microcms.io/api/v1/home-header',
         );
 
         $headers = array(
@@ -55,6 +56,7 @@ class HomeController extends Controller
         $review_field = $result[5]['contents'];
         $questionnaire_field  = $result[6]['contents'];
         $question_field = $result[7]['contents'];
+        $home_header = $result[8]['contents'];
 
 
         // cURLセッションを初期化
@@ -189,6 +191,7 @@ class HomeController extends Controller
             "review_field" => $review_field,
             "questionnaire_field" => $questionnaire_field,
             "question_field" => $question_field,
+            "home_header" => $home_header
         ]);
     }
 }

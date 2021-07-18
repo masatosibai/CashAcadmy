@@ -402,7 +402,7 @@ body {
 /* 予約情報選択画面*/
 #home-header-img {
     position: relative;
-    background-image: url(../img/tophome.png);
+    /* background-image: url(../img/tophome.png); */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover; /* 画像のサイズを指定    */
@@ -974,9 +974,12 @@ body {
     border-bottom: 3px solid #075c86;
     margin-bottom: 3%;
 }
-#question-field .question-answer p{
-    width: 85%;
-    margin: 0 auto 3%;
+#question-field .question-answer {
+    margin-bottom: 2%;
+}
+#question-field .question-answer {
+    margin: 0 auto;
+    width: 93%;
     text-align: left;
 }
 #question-field .question-answer .question-mark {
@@ -1000,7 +1003,7 @@ body {
 }
 #question-field .question-answer .answer p {
     text-align: left;
-    font: normal normal normal 14px Noto Sans CJK JP;
+    font: normal normal normal 12px Noto Sans CJK JP;
     letter-spacing: 0px;
     color: #707070;
     margin-top: 1%;
@@ -1144,7 +1147,7 @@ body {
     #review-field .age-profession {
         font: normal normal bold 13px Noto Sans CJK JP;
     }
-    #review-field .message {
+    #review-field .message p {
         font: normal normal normal 12px Noto Sans CJK JP;
     }
     #questionnaire-field {
@@ -1361,7 +1364,7 @@ body {
         top: 30px; /* ハンバーガーメニューの3本目の棒 */
     }
     #home-header-img {
-        background-image: url(../img/smallhomeheader.png);
+        /* background-image: url(../img/smallhomeheader.png); */
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
