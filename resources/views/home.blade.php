@@ -250,7 +250,7 @@
             <div class="card-img">
                 <img
                     src="{{ $four_features_field[1]['image']['url'] }}"
-                    alt=""
+                    alt="$four_features_field[1]['title']"
                 />
             </div>
             <div class="comment pc-display">
@@ -280,7 +280,7 @@
             <div class="card-img">
                 <img
                     src="{{ $four_features_field[2]['image']['url'] }}"
-                    alt=""
+                    alt="$four_features_field[2]['title']"
                 />
             </div>
             <div class="comment pc-display">
@@ -308,7 +308,7 @@
             <div class="card-img">
                 <img
                     src="{{ $four_features_field[3]['image']['url'] }}"
-                    alt=""
+                    alt="$four_features_field[3]['title']"
                 />
             </div>
             <div class="comment pc-display">
@@ -326,7 +326,9 @@
         </div>
     </div>
 </div>
-<div id="learning-curriculum-example-field">
+<div id="learning-curriculum-example-field" style="background-image: url({{
+        $learning_curriculum_example_field[0]['image']['url']
+    }})">
     <div class="learning-curriculum-example">
         <div class="title title-font">
             <p>学習カリキュラム例</p>
@@ -792,7 +794,7 @@
                 <div class="img">
                     <img
                         src="{{ $review_field[1]['image']['url'] }}"
-                        alt=""
+                        alt="{{$review_field[1]['title']}}"
                     />
                 </div>
                 <div class="sp-comment sp-display" style="display: none">
@@ -843,6 +845,122 @@
         </div>
         <div class="review">
             <div class="title">
+                <!-- <p>漠然としたお金への<br />不安が消えた</p> -->
+                {!!$review_field[1]["title"]!!}
+            </div>
+            <div class="sp-review-img-comment">
+                <div class="img">
+                    <img
+                        src="{{ $review_field[1]['image']['url'] }}"
+                        alt="{{$review_field[1]['title']}}"
+                    />
+                </div>
+                <div class="sp-comment sp-display" style="display: none">
+                    <p class="name">{!!$review_field[1]["name"]!!}</p>
+                    <br />
+                    <p class="age-profession">{!!$review_field[1]["profession"]!!} </p>
+                    <br />
+                </div>
+            </div>
+            <div class="comment sp-display" style="display: none">
+                <p class="before-after">受講前</p>
+                <br />
+                <div class="message">
+                    <!-- 以前の私は「貯金は今のままでも足りるのか」「知らない間に損をしているとがあるかもしれない」といったお金への不安を抱えて居ました。 -->
+                    {!!$review_field[1]["bc-class-discription"]!!}
+                </div>
+                <br />
+                <p class="before-after">受講後</p>
+                <br />
+                <div class="message">
+                    <!-- 貯金は「なぜ、どのぐらい必要なのか」を知ることができました。また、自分が気付いていなかった大きな支出や国がやっている優遇制度を知ることができました。漠然とした不安が消えただけでなく、自信を持てるようになりました。 -->
+                     {!!$review_field[1]["af-class-discription"]!!}
+                </div>
+                <br />
+            </div>
+            <div class="comment pc-display">
+                <p class="name">{!!$review_field[1]["name"]!!}</p>
+                <br />
+                <p class="age-profession">{!!$review_field[1]["profession"]!!}</p>
+                <br />
+                <p class="before-after">受講前</p>
+                <br />
+                <div class="message">
+                    <!-- 以前の私は「貯金は今のままでも足りるのか」「知らない間に損をしているとがあるかもしれない」といったお金への不安を抱えて居ました。 -->
+                    {!!$review_field[1]["bc-class-discription"]!!}
+                </div>
+                </p>
+                <br />
+                <p class="before-after">受講後</p>
+                <br />
+                <div class="message">
+                    <!-- 貯金は「なぜ、どのぐらい必要なのか」を知ることができました。また、自分が気付いていなかった大きな支出や国がやっている優遇制度を知ることができました。漠然とした不安が消えただけでなく、自信を持てるようになりました。 -->
+                    {!!$review_field[1]["af-class-discription"]!!}
+                </div>
+                </p>
+                <br />
+            </div>
+        </div>
+        <div class="review">
+            <div class="title">
+                <!-- <p>漠然としたお金への<br />不安が消えた</p> -->
+                {!!$review_field[1]["title"]!!}
+            </div>
+            <div class="sp-review-img-comment">
+                <div class="img">
+                    <img
+                        src="{{ $review_field[1]['image']['url'] }}"
+                        alt="{{$review_field[1]['title']}}"
+                    />
+                </div>
+                <div class="sp-comment sp-display" style="display: none">
+                    <p class="name">{!!$review_field[1]["name"]!!}</p>
+                    <br />
+                    <p class="age-profession">{!!$review_field[1]["profession"]!!} </p>
+                    <br />
+                </div>
+            </div>
+            <div class="comment sp-display" style="display: none">
+                <p class="before-after">受講前</p>
+                <br />
+                <div class="message">
+                    <!-- 以前の私は「貯金は今のままでも足りるのか」「知らない間に損をしているとがあるかもしれない」といったお金への不安を抱えて居ました。 -->
+                    {!!$review_field[1]["bc-class-discription"]!!}
+                </div>
+                <br />
+                <p class="before-after">受講後</p>
+                <br />
+                <div class="message">
+                    <!-- 貯金は「なぜ、どのぐらい必要なのか」を知ることができました。また、自分が気付いていなかった大きな支出や国がやっている優遇制度を知ることができました。漠然とした不安が消えただけでなく、自信を持てるようになりました。 -->
+                     {!!$review_field[1]["af-class-discription"]!!}
+                </div>
+                <br />
+            </div>
+            <div class="comment pc-display">
+                <p class="name">{!!$review_field[1]["name"]!!}</p>
+                <br />
+                <p class="age-profession">{!!$review_field[1]["profession"]!!}</p>
+                <br />
+                <p class="before-after">受講前</p>
+                <br />
+                <div class="message">
+                    <!-- 以前の私は「貯金は今のままでも足りるのか」「知らない間に損をしているとがあるかもしれない」といったお金への不安を抱えて居ました。 -->
+                    {!!$review_field[1]["bc-class-discription"]!!}
+                </div>
+                </p>
+                <br />
+                <p class="before-after">受講後</p>
+                <br />
+                <div class="message">
+                    <!-- 貯金は「なぜ、どのぐらい必要なのか」を知ることができました。また、自分が気付いていなかった大きな支出や国がやっている優遇制度を知ることができました。漠然とした不安が消えただけでなく、自信を持てるようになりました。 -->
+                    {!!$review_field[1]["af-class-discription"]!!}
+                </div>
+                </p>
+                <br />
+            </div>
+        </div>        
+        <!-- <div class="review">
+            <div class="title">
                 <p>漠然としたお金への<br />不安が消えた</p>
             </div>
             <div class="sp-review-img-comment">
@@ -886,8 +1004,8 @@
                 </p>
                 <br />
             </div>
-        </div>
-        <div class="review">
+        </div> -->
+        <!-- <div class="review">
             <div class="title">
                 <p>漠然としたお金への<br />不安が消えた</p>
             </div>
@@ -933,6 +1051,7 @@
                 <br />
             </div>
         </div>
+    </div> -->
     </div>
 </div>
 
@@ -1013,7 +1132,7 @@
                 <p class="pc-display">
                     <span class="question-mark">Q</span
                     ><span class="question"
-                        > {!!$question_field[2]["pc-title"]!!} </span
+                        > {{$question_field[2]["pc-title"]}} </span
                     >
                 </p>
                 <div class="sp-display questions-field" style="display: none">
@@ -1043,7 +1162,7 @@
                 <p class="pc-display">
                     <span class="question-mark">Q</span
                     ><span class="question"
-                        >{!!$question_field[3]["pc-title"]!!}</span
+                        >{{$question_field[3]["pc-title"]}}</span
                     >
                 </p>
                 <div class="sp-display questions-field" style="display: none">
@@ -1077,7 +1196,7 @@
                 <p class="pc-display">
                     <span class="question-mark">Q</span
                     ><span class="question"
-                        >{!!$question_field[4]["pc-title"]!!}</span
+                        >{{$question_field[4]["pc-title"]}}</span
                     >
                 </p>
                 <div class="sp-display questions-field" style="display: none">
@@ -1111,7 +1230,7 @@
             <div class="question-answer">
                 <p class="pc-display">
                     <span class="question-mark">Q</span
-                    ><span class="question">{!!$question_field[5]["pc-title"]!!}</span>
+                    ><span class="question">{{$question_field[5]["pc-title"]}}</span>
                 </p>
                 <div class="sp-display questions-field" style="display: none">
                     <p class="question-mark">Q</p>
@@ -1137,7 +1256,7 @@
                 <p class="pc-display">
                     <span class="question-mark">Q</span
                     ><span class="question"
-                        >{!!$question_field[6]["pc-title"]!!}</span
+                        >{{$question_field[6]["pc-title"]}}</span
                     >
                 </p>
                 <div class="sp-display questions-field" style="display: none">

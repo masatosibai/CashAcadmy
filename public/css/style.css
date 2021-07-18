@@ -598,7 +598,7 @@ body {
 }
 
 #learning-curriculum-example-field {
-    background-image: url(../img/learning_example.png);
+    /* background-image: url(../img/learning_example.png); */
     margin-bottom: 5%;
 }
 .learning-curriculum-example {
@@ -1809,7 +1809,7 @@ body {
         top: 30px; /* ハンバーガーメニューの3本目の棒 */
     }
     #home-header-img {
-        background-image: url(../img/smallhomeheader.png);
+        /* background-image: url(../img/smallhomeheader.png); */
         background-repeat: no-repeat;
         background-position: center center;
         background-size: cover;
