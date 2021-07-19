@@ -59,24 +59,6 @@ class HomeController extends Controller
         $home_header = $result[8]['contents'];
 
 
-        // cURLセッションを初期化
-        // $ch = curl_init();
-
-        // // オプションを設定
-        // curl_setopt($ch, CURLOPT_URL, $url); // 取得するURLを指定
-        // curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // 実行結果を文字列で返す
-        // curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false); // サーバー証明書の検証を行わない
-        // curl_setopt($ch, CURLOPT_HTTPHEADER, $headers);
-
-        // // URLの情報を取得
-        // $response =  curl_exec($ch);
-
-        // // 取得結果を表示
-        // $result = json_decode($response, true);
-
-        // // セッションを終了
-        // curl_close($ch);
-
         $thisWeekDays = array();
         $thisWeekDays[0] = "日時";
         $thisWeekYear = array();
@@ -125,27 +107,53 @@ class HomeController extends Controller
         $start_dt->setTime(-9, 00, 00);
         $end_dt->setTime(14, 59, 59);
         $thisWeekEvents = Event::get($start_dt, $end_dt);
-
         if ($thisWeekEvents->count()) {
             foreach ($thisWeekEvents as $event) {
                 $start_day_time = $event->startDateTime;
-                // dump($start_day_time->day);
-                $day = $start_day_time->day;
+                $start_time_day = $start_day_time->day;
                 $startTimeHour = $start_day_time->hour;
-                // dump($startTimeHour);
+
                 $end_day_time = $event->endDateTime;
+                $end_tiem_day = $end_day_time->day;
                 $endTimeHour = $end_day_time->hour;
                 $endTimeMinute = $end_day_time->minute;
                 $endTimeSecond = $end_day_time->second;
-                // dump($endTime);
+
                 if ($endTimeMinute == 0 && $endTimeSecond == 0) {
                     $endTimeHour -= 1;
                 }
-                // dump($startTimeHour);
-                // dump($endTimeHour);
-                for ($i = $startTimeHour; $i <= $endTimeHour; $i++) {
-                    if ($i >= 10 && $i <= 20) {
-                        $thisWeek[$i][$thisWeekIndex[$day]]["is_resevation"] = 1;
+
+                $now = Carbon::now('Asia/Tokyo');
+
+
+                if ($start_time_day != $end_tiem_day) {
+                    for ($t = $start_time_day; $t <= $end_tiem_day; $t++) {
+                        if ($t == $start_time_day && $start_time_day > $now->day) {
+                            for ($i = $startTimeHour; $i <= 20; $i++) {
+                                if ($i >= 10) {
+                                    $thisWeek[$i][$thisWeekIndex[$start_time_day]]["is_resevation"] = 1;
+                                }
+                            }
+                        } else if ($t == $end_tiem_day) {
+                            for ($i = 10; $i <= $endTimeHour; $i++) {
+                                if ($i <= 20) {
+                                    $thisWeek[$i][$thisWeekIndex[$end_tiem_day]]["is_resevation"] = 1;
+                                }
+                            }
+                        } else {
+                            if ($t >= $thisWeekDays[1] && $t <= $thisWeekDays[7]) {
+                                for ($i = 10; $i <= 20; $i++) {
+                                    $thisWeek[$i][$thisWeekIndex[$t]]["is_resevation"] = 1;
+                                }
+                            }
+                        }
+                    }
+                } else {
+
+                    for ($i = $startTimeHour; $i <= $endTimeHour; $i++) {
+                        if ($i >= 10 && $i <= 20) {
+                            $thisWeek[$i][$thisWeekIndex[$start_time_day]]["is_resevation"] = 1;
+                        }
                     }
                 }
             }
@@ -156,29 +164,54 @@ class HomeController extends Controller
         //終了日時
         $end_dt = new Carbon($nextWeekYear[14] . '-' . $nextWeekMonth[14] . '-' . $nextWeekDays[14]);
 
+
         $start_dt->setTime(-9, 00, 00);
         $end_dt->setTime(14, 59, 59);
         $nextWeekEvents = Event::get($start_dt, $end_dt);
         if ($nextWeekEvents->count()) {
             foreach ($nextWeekEvents as $event) {
                 $start_day_time = $event->startDateTime;
-                // dump($start_day_time->day);
-                $day = $start_day_time->day;
+                $start_time_day = $start_day_time->day;
                 $startTimeHour = $start_day_time->hour;
-                // dump($startTimeHour);
+
                 $end_day_time = $event->endDateTime;
+                $end_tiem_day = $end_day_time->day;
                 $endTimeHour = $end_day_time->hour;
                 $endTimeMinute = $end_day_time->minute;
                 $endTimeSecond = $end_day_time->second;
-                // dump($endTime);
+
                 if ($endTimeMinute == 0 && $endTimeSecond == 0) {
                     $endTimeHour -= 1;
                 }
-                // dump($startTimeHour);
-                // dump($endTimeHour);
-                for ($i = $startTimeHour; $i <= $endTimeHour; $i++) {
-                    if ($i >= 10 && $i <= 20) {
-                        $nextWeek[$i][$nextWeekIndex[$day]]["is_resevation"] = 1;
+
+                if ($start_time_day != $end_tiem_day) {
+                    for ($t = $start_time_day; $t <= $end_tiem_day; $t++) {
+                        if ($t == $start_time_day && $start_time_day) {
+                            for ($i = $startTimeHour; $i <= 20; $i++) {
+                                if ($i >= 10) {
+                                    $nextWeek[$i][$nextWeekIndex[$start_time_day]]["is_resevation"] = 1;
+                                }
+                            }
+                        } else if ($t == $end_tiem_day && $end_tiem_day <= $nextWeekDays[14]) {
+                            for ($i = 10; $i <= $endTimeHour; $i++) {
+                                if ($i <= 20) {
+                                    $nextWeek[$i][$nextWeekIndex[$end_tiem_day]]["is_resevation"] = 1;
+                                }
+                            }
+                        } else {
+                            if ($t >= $nextWeekDays[8] && $t <= $nextWeekDays[14]) {
+                                for ($i = 10; $i <= 20; $i++) {
+                                    $nextWeek[$i][$nextWeekIndex[$t]]["is_resevation"] = 1;
+                                }
+                            }
+                        }
+                    }
+                } else {
+
+                    for ($i = $startTimeHour; $i <= $endTimeHour; $i++) {
+                        if ($i >= 10 && $i <= 20) {
+                            $nextWeek[$i][$nextWeekIndex[$start_time_day]]["is_resevation"] = 1;
+                        }
                     }
                 }
             }

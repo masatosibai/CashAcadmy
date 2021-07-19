@@ -94,7 +94,7 @@
 .nameExample {
     display: flex;
     justify-content: start;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     padding-left: 39%;
 }
 .firstName,
@@ -109,7 +109,7 @@
 .email-Example {
     display: flex;
     justify-content: start;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     padding-left: 39%;
 }
 .email-Example p {
@@ -121,7 +121,7 @@
 .telnumber-Example {
     display: flex;
     justify-content: start;
-    margin-bottom: 2%;
+    margin-bottom: 1%;
     padding-left: 39%;
 }
 .telnumber-Example p {
