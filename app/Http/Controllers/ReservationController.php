@@ -33,18 +33,18 @@ class ReservationController extends Controller
         //フォームから受け取ったすべてのinputの値を取得
         $inputs = $request->all();
 
-        // $validatedData = FacadesValidator::make($inputs, [
-        //     'familyName' => 'required|string|max:100',
-        //     'firstName' => 'required|string|max:100',
-        //     'email' => 'required|email|max:255|regex:/^[a-zA-Z0-9_.+-]+@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/',
-        //     'telNumber' => 'required|max:255|regex:/^[0-9]+$/',
-        // ], ["email.regex" => "emailの形式を確認してください", "telNumber.regex" => "半角数字のみで入力してください。"]);
+        $validatedData = FacadesValidator::make($inputs, [
+            'familyName' => 'required|string|max:100',
+            'firstName' => 'required|string|max:100',
+            'email' => 'required|email|max:255|regex:/^[a-zA-Z0-9_.+-]+@([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$/',
+            'telNumber' => 'required|max:255|regex:/^[0-9]+$/',
+        ], ["email.regex" => "emailの形式を確認してください", "telNumber.regex" => "半角数字のみで入力してください。"]);
 
-        // if ($validatedData->fails()) {
-        //     return redirect('/contact')
-        //         ->withErrors($validatedData)
-        //         ->withInput();
-        // }
+        if ($validatedData->fails()) {
+            return redirect('/contact')
+                ->withErrors($validatedData)
+                ->withInput();
+        }
         return view("contact.confirm", ["inputs" => $inputs]);
     }
 
@@ -63,48 +63,48 @@ class ReservationController extends Controller
                 ->withInput();
         } else {
 
-            // //google calendarへ登録
-            // $event = new Event;
-            // $dt = new Carbon();
-            // $dt->setTimezone('Asia/Tokyo');
-            // $dt->setDateTime($inputs["year"], $inputs["month"], $inputs["day"], $inputs["time"], 0, 0);
-            // $event->name = $inputs["familyName"] . " " . $inputs["firstName"] . "様のカウンセリング";
-            // $event->startDateTime = $dt;
-            // $event->endDateTime = $dt->addHour();
-            // $event->save();
+            //google calendarへ登録
+            $event = new Event;
+            $dt = new Carbon();
+            $dt->setTimezone('Asia/Tokyo');
+            $dt->setDateTime($inputs["year"], $inputs["month"], $inputs["day"], $inputs["time"], 0, 0);
+            $event->name = $inputs["familyName"] . " " . $inputs["firstName"] . "様のカウンセリング";
+            $event->startDateTime = $dt;
+            $event->endDateTime = $dt->addHour();
+            $event->save();
 
-            // //データーベースに登録
-            // if (!Contact::where('email', '=', $inputs['email'])->exists()) {
-            //     //同じemailがなければすべて登録
-            //     $param = [
-            //         'family_name' => $inputs["familyName"],
-            //         'first_name' => $inputs["firstName"],
-            //         'email' => $inputs["email"],
-            //         'phone_number' => $inputs["telNumber"],
-            //         "is_deleted" => 0,
-            //     ];
-            //     DB::table('contacts')->insert($param);
-            // } else {
-            //     //同じemailがあればその他の項目を更新
-            //     $param = [
-            //         'family_name' => $inputs["familyName"],
-            //         'first_name' => $inputs["firstName"],
-            //         'phone_number' => $inputs["telNumber"],
-            //         "is_deleted" => 0,
-            //     ];
-            //     DB::table('contacts')->where("email", $inputs['email'])->update($param);
-            // }
+            //データーベースに登録
+            if (!Contact::where('email', '=', $inputs['email'])->exists()) {
+                //同じemailがなければすべて登録
+                $param = [
+                    'family_name' => $inputs["familyName"],
+                    'first_name' => $inputs["firstName"],
+                    'email' => $inputs["email"],
+                    'phone_number' => $inputs["telNumber"],
+                    "is_deleted" => 0,
+                ];
+                DB::table('contacts')->insert($param);
+            } else {
+                //同じemailがあればその他の項目を更新
+                $param = [
+                    'family_name' => $inputs["familyName"],
+                    'first_name' => $inputs["firstName"],
+                    'phone_number' => $inputs["telNumber"],
+                    "is_deleted" => 0,
+                ];
+                DB::table('contacts')->where("email", $inputs['email'])->update($param);
+            }
 
-            // //Slack通知
-            // $st = $inputs["familyName"] . " " . $inputs["firstName"] . "様" . "\n" . $inputs["email"] . "\n" . $inputs["telNumber"] .
-            //     $inputs["year"] . "年" . $inputs["month"] . "月" . $inputs["day"] . "日" . $inputs["time"] . "時";
-            // \Slack::send($st);
+            //Slack通知
+            $st = $inputs["familyName"] . " " . $inputs["firstName"] . "様" . "\n" . $inputs["email"] . "\n" . $inputs["telNumber"] .
+                $inputs["year"] . "年" . $inputs["month"] . "月" . $inputs["day"] . "日" . $inputs["time"] . "時";
+            \Slack::send($st);
 
-            // //入力されたメールアドレスにメールを送信（本番用）
-            // Mail::to($inputs['email'])->send(new ContactSendmail($inputs));
+            //入力されたメールアドレスにメールを送信（本番用）
+            Mail::to($inputs['email'])->send(new ContactSendmail($inputs));
 
-            // //再送信を防ぐためにトークンを再発行
-            // $request->session()->regenerateToken();
+            //再送信を防ぐためにトークンを再発行
+            $request->session()->regenerateToken();
 
             //送信完了ページのviewを表示
             return view('contact.thanks');
