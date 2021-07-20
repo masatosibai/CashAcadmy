@@ -63,7 +63,7 @@ class ReservationController extends Controller
                 ->withInput();
         } else {
 
-            //google calendarへ登録
+            // google calendarへ登録
             $event = new Event;
             $dt = new Carbon();
             $dt->setTimezone('Asia/Tokyo');
@@ -73,7 +73,7 @@ class ReservationController extends Controller
             $event->endDateTime = $dt->addHour();
             $event->save();
 
-            //データーベースに登録
+            // データーベースに登録
             if (!Contact::where('email', '=', $inputs['email'])->exists()) {
                 //同じemailがなければすべて登録
                 $param = [
@@ -101,7 +101,7 @@ class ReservationController extends Controller
             \Slack::send($st);
 
             //入力されたメールアドレスにメールを送信（本番用）
-            // Mail::to($inputs['email'])->send(new ContactSendmail($inputs));
+            Mail::to($inputs['email'])->send(new ContactSendmail($inputs));
 
             //再送信を防ぐためにトークンを再発行
             $request->session()->regenerateToken();

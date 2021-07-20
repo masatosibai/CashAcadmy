@@ -16,6 +16,7 @@ class SlackService
 
   protected function routeNotificationForSlack()
   {
-    return env('SLACK_URL');
+    // return env('SLACK_URL');
+    return config('app.slack_url');
   }
 }

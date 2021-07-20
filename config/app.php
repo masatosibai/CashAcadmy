@@ -237,6 +237,8 @@ return [
     ],
     "microCMS" => [
         "apikey" => env("X_API_KEY")
-    ]
+    ],
+    "slack_url" =>  env("SLACK_URL")
+
 
 ];

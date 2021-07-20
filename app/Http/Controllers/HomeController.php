@@ -23,7 +23,7 @@ class HomeController extends Controller
         );
 
         $headers = array(
-            "X-API-KEY :" . config('app.microCMS.apikey')
+            "X-API-KEY:" . config('app.microCMS.apikey')
         );
         $mh = curl_multi_init();
         $chs = [];
