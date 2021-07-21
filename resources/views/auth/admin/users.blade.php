@@ -21,17 +21,11 @@
                             value="{{ $user['family_name'] }}"
                             type="text"
                         />
-                        <!-- @if ($errors->has('update_family_name'))
-          <p class="error-message">{{ $errors->first('update_family_name') }}</p>
-          @endif -->
                         <input
                             name="update_first_name"
                             value="{{ $user['first_name'] }}"
                             type="text"
                         />
-                        <!-- @if ($errors->has('update_first_name'))
-          <p class="error-message">{{ $errors->first('update_first_name') }}</p>
-          @endif -->
                     </td>
                     <td class="email-field">
                         <input
@@ -39,9 +33,6 @@
                             value="{{ $user['email'] }}"
                             type="text"
                         />
-                        <!-- @if ($errors->has('update_email'))
-          <p class="error-message">{{ $errors->first('update_email') }}</p>
-          @endif -->
                     </td>
                     <td></td>
                     @if($previ == 1)
